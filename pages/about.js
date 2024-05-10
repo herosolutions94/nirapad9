@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useRef } from 'react';
+import React, { useState} from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
@@ -7,6 +7,11 @@ import ReactStars from 'react-stars'
 
 
 export default function About() {
+  const [activeTab, setActiveTab] = useState(0);
+  const [showDetail, setShowDetail] = useState(false);
+  const popShow = () => {
+    setShowDetail(!showDetail);
+  }
   const testi = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -28,7 +33,7 @@ export default function About() {
 
   return (
     <main>
-      <section className="sub_banner">
+      <section className="sub_banner about_banner">
         <div className="heading_banner">
             <h1>About Us</h1>
             {/* <div className="abt_img">
@@ -85,6 +90,433 @@ export default function About() {
           </div>
         </div>
       </section>
+      <section className="team_sec">
+        <div className="contain-fluid">
+            <div className="sec_heading text-center">
+              <h2>Meet our Team</h2>
+            </div>
+            <div className="tabs_btn">
+                <button className={activeTab === 0 ? "active" : " "} onClick={() => setActiveTab(0)}>All</button>
+                <button className={activeTab === 1 ? "active" : " "} onClick={() => setActiveTab(1)}>DEVELOPERS</button>
+                <button className={activeTab === 2 ? "active" : " "} onClick={() => setActiveTab(2)}>DIGITAL MARKETING</button>
+                <button className={activeTab === 3 ? "active" : " "} onClick={() => setActiveTab(3)}>FINANCE</button>
+                <button className={activeTab === 4 ? "active" : " "} onClick={() => setActiveTab(4)}>HR</button>
+                <button className={activeTab === 5 ? "active" : " "} onClick={() => setActiveTab(5)}>UI/UX</button>
+            </div>
+            <div className="devide_line_color"></div>
+            {/* ============popup team============= */}
+              <div className={showDetail ? "team_detail active" : "team_detail"}>
+                    <div className="x_btn" onClick={popShow}></div>
+                    <div className="inner_team_details flex">
+                        <div className="colL">
+                          <div className="image">
+                            <img src="/images/team1.png" alt="" />
+                          </div>
+                          <h4>Katy Perry</h4>
+                          <p>Founder and CEO</p>
+                        </div>
+                        <div className="colR">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit ut labore et dolore magna aliqua. </p>
+                          <p>Sit amet consectetur adipiscing elit. Viverra justo nec ultrices dui sapien eget mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit Nascetur ridiculus mus mauris vitae ultricies. Sit amet consectetur adipiscing elit. Viverra justo nec ultrices dui sapien eget mi</p>
+                          <div className="social_logon">
+                            <span>Follow Me on - </span>
+                            <Link href="" ><img src="/images/share_linked.svg" alt="" /></Link>
+                            <Link href="" ><img src="/images/share_envelop.svg" alt="" /></Link>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              {/* ===============end popup team========= */}
+            <div className={showDetail ? "tab_cntnt hide" : "tab_cntnt"}>
+              <div className={activeTab === 0 ? "team_content active" : "team_content"}>
+                <div className="flex">
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div className={activeTab === 1 ? "team_content active" : "team_content"}>
+                <div className="flex">
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={activeTab === 2 ? "team_content active" : "team_content"}>
+                <div className="flex">
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={activeTab === 3 ? "team_content active" : "team_content"}>
+                <div className="flex">
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={activeTab === 4 ? "team_content active" : "team_content"}>
+                <div className="flex">
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={activeTab === 5 ? "team_content active" : "team_content"}>
+                <div className="flex">
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="inner">
+                      <div className="image">
+                        <img src="/images/user.png" alt="" />
+                        <span className="plus_btn" onClick={popShow}>
+                          <img src="/images/plus.svg" alt="" />
+                        </span>
+                      </div>
+                      <h4>Naveen Kola</h4>
+                      <p>Company Head</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
       <section className="testimonial_sec">
         <div className="contain">
           <div className="sec_heading">
@@ -130,80 +562,8 @@ export default function About() {
           </Slider>
         </div>
       </section>
-      <section className="spotlight_sec">
-        <div className="contain">
-          <div className="sec_heading">
-            <h2>Customer Spotlight : Share Your Reviews With Us!</h2>
-          </div>
-          <div className="flex">
-            <div className="col">
-              <div className="inner">
-                <Link href="">
-                  <img src="/images/expand.svg" alt="" />
-                </Link>
-                <div className="image">
-                  <img src="/images/glassdoor_testi.svg" alt="" />
-                </div>
-                <div className="mini_flex">
-                  <div className="mini_logo">
-                    <img src="/images/glassdoor_logo.svg" alt="" />
-                  </div>
-                  <span>Rating</span>
-                </div>
-                <div className="review_flex">
-                  <span>5.0</span>
-                  <ReactStars
-                    className="rates"
-                    count={5}
-                    value={5}
-                    size={20}
-                    color1={'#ddd'}
-                    color2={'#F0C91A'}
-                    edit={false}/>
-                    <span>1000 Reviews</span>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="inner">
-                <Link href="">
-                  <img src="/images/expand.svg" alt="" />
-                </Link>
-                <div className="image">
-                  <img src="/images/google_testi.svg" alt="" />
-                </div>
-                <div className="mini_flex">
-                  <div className="mini_logo">
-                    <img src="/images/google_logo.svg" alt="" />
-                  </div>
-                  <span>Rating</span>
-                </div>
-                <div className="review_flex">
-                  <span>5.0</span>
-                  <ReactStars
-                    className="rates"
-                    count={5}
-                    value={5}
-                    size={20}
-                    color1={'#ddd'}
-                    color2={'#F0C91A'}
-                    edit={false}/>
-                    <span>1000 Reviews</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="btn_blk">
-            <Link href="" className="site_btn">
-              <img src="/images/pencil.svg" alt="" />
-              <span>Write a Review</span>
-            </Link>
-          </div>
-        </div>
-      </section>
       <section className="cta_sec">
         <div className="contain">
-          <div className="devide_line_color"></div>
           <div className="flex">
             <div className="colL">
               <div className="image">

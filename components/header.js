@@ -54,22 +54,22 @@ export default function Header({data}) {
                         <ul>
                           <li><h5>Staffing</h5></li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/staffing" onClick={closeDropdown}>
                             Microsoft
                             </Link>
                           </li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/staffing" onClick={closeDropdown}>
                             Workday
                             </Link>
                           </li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/staffing" onClick={closeDropdown}>
                             SAP
                             </Link>
                           </li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/staffing" onClick={closeDropdown}>
                             ZOHO
                             </Link>
                           </li>
@@ -79,22 +79,22 @@ export default function Header({data}) {
                         <ul>
                           <li><h5>Consulting</h5></li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/consulting" onClick={closeDropdown}>
                             Microsoft
                             </Link>
                           </li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/consulting" onClick={closeDropdown}>
                             Workday
                             </Link>
                           </li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/consulting" onClick={closeDropdown}>
                             SAP
                             </Link>
                           </li>
                           <li>
-                            <Link href="/" onClick={closeDropdown}>
+                            <Link href="/consulting" onClick={closeDropdown}>
                             ZOHO
                             </Link>
                           </li>

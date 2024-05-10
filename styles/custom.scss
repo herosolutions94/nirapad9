@@ -597,8 +597,8 @@ _btn {
         @include pos(1rem, 1rem, null, null);
         width: 3.5rem;
         height: 3.5rem;
-        background: $light;
-        color: $color2;
+        background: #000;
+        color: $light;
         font-size: 2rem;
         font-weight: 600;
         padding: 0;
@@ -609,7 +609,7 @@ _btn {
         cursor: pointer;
         @include trans;
         z-index: 5;
-        border: 1px solid $color2;
+        border: 1px solid #000;
         &:hover {
             background: $color;
         }
@@ -2953,7 +2953,7 @@ nav {
         overflow: hidden;
         width: 25rem;
         &.sm{
-          width: 15rem;
+          width: 16rem;
           padding: 1rem 2rem;
         }
         @include ipad_sm {
