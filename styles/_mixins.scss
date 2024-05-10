@@ -311,6 +311,7 @@ $cross_circle: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www
 	}
 }
 
+
 @mixin mobile_md {
 	@media (max-width: 576px) {
 		@content;
