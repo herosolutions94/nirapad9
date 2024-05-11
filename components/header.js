@@ -131,7 +131,7 @@ export default function Header({data}) {
             </ul>
           </nav>
           <div className="cta_btn btn_blk">
-            <Link href="" className="site_btn blank">Contact Us</Link>
+            <Link href="/contact" className="site_btn blank">Contact Us</Link>
           </div>
           <div className="clearfix"></div>
         </div>

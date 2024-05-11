@@ -91,8 +91,8 @@ export default function Footer() {
             <div className="copyright">
               <p>
                 <span>Copy</span>
-                <Link href="" >Terms</Link>
-                <Link href="">Privacy</Link>
+                <Link href="/terms" >Terms</Link>
+                <Link href="/privacy-policy">Privacy</Link>
               </p>
             </div>
           </div>

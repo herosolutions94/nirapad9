@@ -426,6 +426,14 @@
         background:url(/images/about-banner.png);
         @include bg;
     }
+    &.contact_banner{
+        background:url(/images/contact-banner.png);
+        @include bg;
+    }
+    &.privacy_banner{
+        background:url(/images/policy-banner.png);
+        @include bg;
+    }
     &:before{
         @include pos;
         content: '';
@@ -1471,3 +1479,215 @@
         }
     }
 }
+
+
+// =====================contact_area=============
+.contact_area{
+    p{
+        font-size: 1.8rem;
+    }
+    font-size: 1.8rem;
+    .cntnt{
+        max-width: 70rem;
+        margin: 0 auto;
+        .sec_heading{
+            text-align: center;
+        }
+    }
+    .form_blk{
+        max-width: 90rem;
+        margin: 0 auto;
+        .devide_line_color{
+            margin-bottom: 3rem;
+        }
+        form{
+            .input{
+                background-color: transparent;
+                border: 2px solid;
+                border-image: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9);
+                border-image-slice: 1;
+                font-size: 1.5rem;
+                padding-top: .5rem;
+            }
+            .txt_blk{
+                label{
+                    margin-bottom: 1rem;
+                }
+            }
+            .btn_blk{
+                .site_btn{
+                    padding:0 5rem;
+                }
+            }
+            
+        }
+    }
+}
+
+// ===================thankyou_main======
+.thankyou_main{
+    background: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9);;
+    &:before{
+        @include pos;
+        content: '';
+        background-color: #00000041;
+    }
+}
+.thankyou_pg{
+    min-height: 90vh;
+    max-height: 100%;
+    @include flex(center,center);
+    font-size: 1.8rem;
+    color: $light;
+    
+    .contain{
+        width: 100%;
+        .cntnt{
+            max-width: 50rem;
+            margin: 0 auto;
+            .sec_heading{
+                h1{
+                    font-size: 5.8rem;
+                    font-family: "interBlack";
+                    color: $light;
+                }
+                margin-bottom: 4rem;
+            }
+            h2{
+                font-family: "interBold";
+                font-size: 2.6rem;
+                margin-bottom: 3rem;
+                color: $light;
+            }
+            .social_logon{
+                margin-top: 3rem;
+                img{
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+        }
+    }
+}
+
+.txt_dt_pg{
+    padding-bottom: 3rem;
+    .flex{
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    .colL{
+        width: 30%;
+        padding-right: 6rem;
+    }
+    .colR{
+        width: 70%;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+        font-family: "inter";
+        h1,h2,h3,h4,h5,h6{
+            font-family: "interBold";
+        }
+        hr{
+            color: #000;
+            border-top: 2px solid;
+            opacity: 1;
+            margin: 3rem 0;
+        }
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+                a{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+.faq_blk{
+    @include mobile{
+      margin-top: 2rem;
+      padding: 0;
+    }
+    .outer_faq{
+        box-shadow: none;
+      margin-bottom: 1.5rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .accordion__header{
+        @include flex;
+        gap: 1rem;
+        img{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        h4{
+            flex: 1;
+          margin-bottom: 0;
+          font-family: "interBold";
+          position: relative;
+          cursor: pointer;
+          align-self: center;
+          @include trans;
+        //   padding: 1.7rem 0;
+          padding-right: 2rem;
+          font-size: 1.6rem!important;
+          &:hover{
+            @include trans;
+            color: $color;
+          }
+          &:after{
+            @include pos($l:null);
+            content: '';
+            background: url(/images/arrow-down.svg);
+            @include bg(contain);
+            width: 1.6rem;
+            @include flex(center,center);
+          }
+        }
+      }
+      .accordion__details{
+        overflow: hidden;
+        height: 0;
+        padding-left: 3.5rem;
+        > *:first-child{
+            margin-top: 1.4rem;
+          }
+        p{
+           &:nth-last-child(1){
+            margin-bottom: 0;
+           }
+        }
+        ul{
+            @include list;
+            li{
+                font-family: "interBold";
+                font-size: 1.6rem;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        
+      }
+      &.open{
+        .accordion__header{
+          h4{
+            &:after{
+              background: url(/images/arrow-up.svg);
+              @include bg(contain);
+            }
+          }
+        }
+        .accordion__details{
+          height: auto;
+          
+        }
+      }
+    }
+  }

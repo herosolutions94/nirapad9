@@ -20,7 +20,7 @@
     "country-dropdown-with-flags-for-react": "^1.1.4",
     "date-fns": "^3.6.0",
     "dynamic": "^4.2.2",
-    "gsap": "^3.12.2",
+    "gsap": "^3.12.5",
     "jquery": "^3.7.0",
     "leaflet": "^1.9.4",
     "lg-fullscreen": "^1.2.1",
