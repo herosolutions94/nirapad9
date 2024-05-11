@@ -434,6 +434,10 @@
         background:url(/images/policy-banner.png);
         @include bg;
     }
+    &.terms_banner{
+        background:url(/images/terms-banner.png);
+        @include bg;
+    }
     &:before{
         @include pos;
         content: '';
