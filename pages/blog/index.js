@@ -15,17 +15,17 @@ export default function Blog() {
         <div className="contain">
             <div className="flex">
                 <div className="colL">
-                    <Link href="" className="image">
+                    <Link href="/blog/detail" className="image">
                         <img src="/images/post1.png" alt="" />
                     </Link>
                 </div>
                 <div className="colR">
                     <div className="inner">
                         <div className="sec_heading">
-                            <h2><Link href="">Meet NirApad9</Link></h2>
+                            <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                         </div>
                         <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                        <Link href="">Read More {">>"}</Link>
+                        <Link href="/blog/detail">Read More {">>"}</Link>
                     </div>
                 </div>
             </div>
@@ -33,109 +33,109 @@ export default function Blog() {
                 <div className="flex">
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/blog/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export default function Blog() {
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
               <div className="btn_blk">
-                <Link href="" className="site_btn">Talk to us</Link>
+                <Link href="/blog/detail" className="site_btn">Talk to us</Link>
               </div>
             </div>
           </div>

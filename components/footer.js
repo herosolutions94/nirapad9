@@ -31,10 +31,10 @@ export default function Footer() {
                 <h5>Services</h5>
                 <ul className="f_lnk">
                   <li>
-                    <Link href="">Staffing Services</Link>
+                    <Link href="/staffing">Staffing Services</Link>
                   </li>
                   <li>
-                    <Link href="">Consulting Services</Link>
+                    <Link href="/consulting">Consulting Services</Link>
                   </li>
                   
                 </ul>
@@ -44,16 +44,16 @@ export default function Footer() {
                 <h5>Resources</h5>
                 <ul className="f_lnk">
                   <li>
-                    <Link href="">About Us</Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="">Blogs</Link>
+                    <Link href="/blog">Blogs</Link>
                   </li>
                   <li>
-                    <Link href="">Press </Link>
+                    <Link href="/press">Press </Link>
                   </li>
                   <li>
-                    <Link href="">Announcements</Link>
+                    <Link href="/announcements">Announcements</Link>
                   </li>
                   <li>
                     <Link href="">Careers</Link>

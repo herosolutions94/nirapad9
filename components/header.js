@@ -112,7 +112,7 @@ export default function Header({data}) {
                 <Link href="">Resources</Link>
                 <ul className={resources ? "sub sm active" : "sub sm"}>
                   <li>
-                    <Link href="/" onClick={closeDrop}>
+                    <Link href="/press" onClick={closeDrop}>
                     Press
                     </Link>
                   </li>
@@ -122,7 +122,7 @@ export default function Header({data}) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" onClick={closeDropdown}>
+                    <Link href="/announcements" onClick={closeDropdown}>
                     Announcements
                     </Link>
                   </li>
