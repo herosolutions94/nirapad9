@@ -234,7 +234,7 @@ export default function Consulting() {
             <div className="col">
               <div className="inner">
                 <div className="image">
-                  <img src="/images/logo3.png" alt="" />
+                  <img src="/images/logo4.png" alt="" />
                 </div>
                 <div className="blk_txt">
                   <h3>SAP</h3>
@@ -244,7 +244,7 @@ export default function Consulting() {
             <div className="col">
               <div className="inner">
                 <div className="image">
-                  <img src="/images/logo4.png" alt="" />
+                  <img src="/images/logo3.png" alt="" />
                 </div>
                 <div className="blk_txt">
                   <h3>Zoho</h3>

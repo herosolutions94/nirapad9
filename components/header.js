@@ -117,7 +117,7 @@ export default function Header({data}) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" onClick={closeDrop}>
+                    <Link href="/blog" onClick={closeDrop}>
                     Blogs
                     </Link>
                   </li>
