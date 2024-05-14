@@ -2862,11 +2862,11 @@ nav {
   flex: 1;
   @include trans;
   @include ipad_sm{
-    @include pos($pos: fixed, $t: 8rem, $b:null,$l:null);
+    @include pos($pos: fixed, $t: 8rem);
     @include flex($flow: wrap);
     -ms-flex-line-pack: justify;
     align-content: space-between;
-    width: auto;
+    width: 100%;
     background: $light;
     margin: 0;
     padding: 1rem;
@@ -2877,7 +2877,7 @@ nav {
     overflow: auto;
     z-index: 31;
     top: 0;
-    height: 20rem;
+    height: 100vh;
     align-content: center;
     &.active {
       opacity: 1;
@@ -2910,13 +2910,29 @@ nav {
       }
       @include ipad_sm{
         width: 100%;
-        padding: 0;
+        padding: 1rem 0;
         text-align: center;
         .site_btn {
           margin-top: 0.5rem;
         }
       }
       > a:not(.site_btn) {
+        @include flex(center, center);
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        height: 4rem;
+        color: $primary-color;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'inter';
+        font-size: 1.6rem;
+        &:hover,
+        &.active {
+          color: $color !important;
+        }
+      }
+      > .drop_btn {
         @include flex(center, center);
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -2999,6 +3015,9 @@ nav {
           display: block;
           h5{
             color: $light;
+            @include ipad_sm{
+              color: $black;
+            }
           }
            a {
             display: block;
@@ -3009,6 +3028,7 @@ nav {
             font-size: 1.4rem;
             @include ipad_sm {
               @include i_flex;
+              color: $black;
             }
             &:hover {
               color: $color;
@@ -3022,7 +3042,7 @@ nav {
         margin-top: 0;
         pointer-events: auto;
       }
-      &.drop > a {
+      &.drop > a , &.drop > .drop_btn{
         position: relative;
         &:after {
           content: "";
@@ -3032,6 +3052,14 @@ nav {
           color: inherit;
           margin-left: 0.6rem;
           margin-top: 0.4rem;
+        }
+        
+      }
+      &.open{
+        .sub{
+          @include ipad_sm{
+            display: block;
+          }
         }
       }
     }
@@ -3119,6 +3147,9 @@ footer {
   border-top:2px solid rgb(184 184 184 / 19%);
   font-size: 1.5rem;
   font-family: "inter";
+  @include mobile{
+    padding-top: 4rem;
+  }
   .contain{
     max-width: 120rem;
   }
@@ -3127,12 +3158,19 @@ footer {
       box-sizing: border-box;
       padding: 1rem;
       flex: .5;
+      
       @include ipad_sm{
         flex: unset;
         width: calc(100% / 2);
       }
+      @include mobile_sm{
+        width: 100%;
+      }
       &:first-child{
         flex: 1;
+        @include ipad{
+          flex: .7;
+        }
         @include ipad_sm{
           flex: unset;
         }

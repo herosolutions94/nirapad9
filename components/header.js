@@ -46,9 +46,10 @@ export default function Header({data}) {
                 className={`drop ${isDropdownOpen ? "open" : ""}`}
                 onMouseEnter={toggleDropdown}
                 onMouseLeave={closeDropdown}
+                onClick={toggleDropdown}
               >
-                <Link href="">Services</Link>
-                <ul className={services ? "sub active" : "sub"}>
+                <div className="drop_btn">Services</div>
+                <div className={services ? "sub active" : "sub"}>
                   <ul className="flex">
                       <li>
                         <ul>
@@ -101,15 +102,16 @@ export default function Header({data}) {
                         </ul>
                       </li>
                   </ul>
-                </ul>
+                </div>
               </li>
               <li><Link href="/about" onClick={ToggleAction}>About Us</Link></li>
               <li
                 className={`drop ${isDropOpen ? "open" : ""}`}
                 onMouseEnter={toggleDrop}
                 onMouseLeave={closeDrop}
+                onClick={toggleDrop}
               >
-                <Link href="">Resources</Link>
+                <div className="drop_btn">Resources</div>
                 <ul className={resources ? "sub sm active" : "sub sm"}>
                   <li>
                     <Link href="/press" onClick={closeDrop}>
