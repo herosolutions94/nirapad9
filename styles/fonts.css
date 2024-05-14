@@ -7,6 +7,10 @@
   src: url("/fonts/PTSerif-Bold.ttf");
 }
 @font-face {
+  font-family: "small-font";
+  src: url("/fonts/PTSerif-Regular.ttf");
+}
+@font-face {
   font-family: "big-font";
   src: url("/fonts/ZenTokyoZoo-Regular.ttf") format("truetype");
 }
@@ -21,4 +25,16 @@
 @font-face {
   font-family: "inter";
   src: url("/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "interBold";
+  src: url("/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "interBlack";
+  src: url("/fonts/Inter-Black.ttf");
+}
+@font-face {
+  font-family: "interLite";
+  src: url("/fonts/Inter-Light.ttf");
 }/*# sourceMappingURL=fonts.css.map */

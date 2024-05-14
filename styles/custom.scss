@@ -2843,6 +2843,12 @@ nav {
   @include pos($l:null,$r:2rem,$t:null);
   height: 9rem;
   @include flex(center,center);
+  @include ipad{
+    height: 6rem;
+  }
+  @include ipad_sm{
+    right: 5rem;
+  }
   .site_btn{
     font-size: 1.6rem;
     min-width: unset;
@@ -3121,8 +3127,15 @@ footer {
       box-sizing: border-box;
       padding: 1rem;
       flex: .5;
+      @include ipad_sm{
+        flex: unset;
+        width: calc(100% / 2);
+      }
       &:first-child{
         flex: 1;
+        @include ipad_sm{
+          flex: unset;
+        }
       }
       h5{
         font-family: "interBold";
