@@ -3147,6 +3147,7 @@ footer {
   border-top:2px solid rgb(184 184 184 / 19%);
   font-size: 1.5rem;
   font-family: "inter";
+  background-color: $light;
   @include mobile{
     padding-top: 4rem;
   }

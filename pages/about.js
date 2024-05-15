@@ -35,10 +35,7 @@ export default function About() {
     <main>
       <section className="sub_banner about_banner">
         <div className="heading_banner">
-            <h1>About Us</h1>
-            {/* <div className="abt_img">
-              <img src="/images/sub_shape.svg" alt="" />
-            </div> */}
+          <h1>About Us</h1>
         </div>
       </section>
       <section className="grid_abt">

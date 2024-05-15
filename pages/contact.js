@@ -26,40 +26,52 @@ export default function Contact() {
                         <div className="col-sm-6">
                             <div className="txt_blk">
                                 <label>Full Name*</label>
-                                <input type="text" className="input" name="fullname"/>
+                                <div className="input_outer">
+                                    <input type="text" className="input" name="fullname"/>
+                                </div>
                             </div>
                         </div>
                         <div className="col-sm-6">
                             <div className="txt_blk">
                                 <label>Phone Number*</label>
+                                <div className="input_outer">
                                 <input type="text" className="input" name="phone"/>
+                                </div>
                             </div>
                         </div>
                         <div className="col-sm-6">
                             <div className="txt_blk">
                                 <label>Email Address*</label>
+                                <div className="input_outer">
                                 <input type="text" className="input" name="email"/>
+                                </div>
                             </div>
                         </div>
                         <div className="col-sm-6">
                             <div className="txt_blk">
                                 <label>Company Name</label>
+                                <div className="input_outer">
                                 <input type="text" className="input" name="company_name"/>
+                                </div>
                             </div>
                         </div>
                         <div className="col-sm-6">
                             <div className="txt_blk">
                                 <label>Services</label>
+                                <div className="input_outer">
                                 <select className="input">
                                     <option>Consulting Services</option>
                                     <option>Staffing Services</option>
                                 </select>
+                                </div>
                             </div>
                         </div>
                         <div className="col-sm-12">
                             <div className="txt_blk">
                                 <label>Message*</label>
+                                <div className="input_outer">
                                 <textarea className="input" name=""></textarea>
+                                </div>
                             </div>
                         </div>
                         <div className="col-sm-12">

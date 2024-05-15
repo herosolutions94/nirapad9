@@ -179,7 +179,7 @@ export default function MicrosoftStaffing() {
           </div>
         </div>
       </section>
-      <section className="cta_sec">
+      <section className="cta_sec p_t_zero">
         <div className="contain">
           <div className="devide_line_color"></div>
           <div className="flex">
