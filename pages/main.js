@@ -255,6 +255,40 @@ export default function MainPage() {
                 </div>
               </div>
             </div>
+            <div className="item">
+              <div className="inner">
+                <div className="inner_inner">
+                  <p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+                  <ReactStars
+                            className="rates"
+                            count={5}
+                            value={5}
+                            size={12}
+                            color1={'#ddd'}
+                            color2={'#F0C91A'}
+                            edit={false}/>
+                  <h4>Vp of HR, Acme Solutions</h4>
+                  <p>Mark Cowel</p>
+                </div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="inner">
+                <div className="inner_inner">
+                  <p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+                  <ReactStars
+                            className="rates"
+                            count={5}
+                            value={5}
+                            size={12}
+                            color1={'#ddd'}
+                            color2={'#F0C91A'}
+                            edit={false}/>
+                  <h4>Vp of HR, Acme Solutions</h4>
+                  <p>Mark Cowel</p>
+                </div>
+              </div>
+            </div>
           </Slider>
         </div>
       </section>
