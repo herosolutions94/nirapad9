@@ -9,7 +9,7 @@ export default function BlogDetail() {
       <section className="blog_detail">
         <div className="contain">
             <div className="cntnt text-center">
-                <h1>First Blog’s Title</h1>
+                <h1>First Announcements's Title</h1>
                 <h5>FEBRUARY 20, 2024</h5>
             </div>
             <div className="image">

@@ -122,7 +122,7 @@
         .col{
             flex: 1;
             &:first-child{
-                padding-right: 4rem;
+                padding-right: 5rem;
                 @include ipad{
                     padding-right: 1rem;
                 }
@@ -131,7 +131,7 @@
                 }
             }
             &:last-child{
-                padding-left: 4rem;
+                padding-left: 5rem;
                 @include ipad{
                     padding-left: 1rem;
                 }
@@ -143,13 +143,13 @@
             .inner{
                 padding: 7rem;
                 @include radius(15px);
-                border-bottom-left-radius: none;
-                border-bottom-right-radius: none;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
                 backdrop-filter: blur(37px);
                 -webkit-backdrop-filter: blur(37px);
                 text-align: center;
                 box-shadow:0px 3px 4px 0px #1010106b;
-                padding-top: 12rem;
+                padding-top: 15rem;
                 @include ipad_sm{
                     padding: 3rem;
                     padding-top: 3rem;
@@ -160,7 +160,7 @@
                     font-weight: 400;
                 }
                 .btn_blk{
-                    margin-top: 8rem;
+                    margin-top: 14rem;
                 }
                 .site_btn{
                     width: 100%;
@@ -572,10 +572,9 @@
             text-align: center;
             font-family: "interBlack";
             color: $light;
-            // border: 2px solid;
-            // border-image: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9);
-            // border-image-slice: 1;
-            width: fit-content;
+            max-width: 43rem;
+            min-width: fit-content;
+            // width: fit-content;
             margin: 0 auto;
             padding: 1.5rem 4rem;
             font-size: 6rem;
@@ -1658,10 +1657,19 @@
                 box-shadow: none;
                 @include radius(0);
                 background-color: transparent;
+                @include trans;
                 img{
                     @include pos;
                     @include object;
+                    @include trans;
                 }
+                &:hover{
+                    img{
+                        @include trans;
+                        transform: scale(1.2) rotate(0deg);
+                    }
+                }
+                
             }
         }
         .colR{
@@ -1732,6 +1740,13 @@
                         img{
                             @include pos;
                             @include object;
+                            @include trans;
+                        }
+                        &:hover{
+                            img{
+                                @include trans;
+                                transform: scale(1.2) rotate(0deg);
+                            }
                         }
                     }
                     .txt{
@@ -1832,6 +1847,13 @@
                     img{
                         @include pos;
                         @include object;
+                        @include trans;
+                    }
+                    &:hover{
+                        img{
+                            @include trans;
+                            transform: scale(1.2) rotate(0deg);
+                        }
                     }
                 }
 
@@ -1913,6 +1935,13 @@
                     img{
                         @include pos;
                         @include object;
+                        @include trans;
+                    }
+                    &:hover{
+                        img{
+                            @include trans;
+                            transform: scale(1.2) rotate(0deg);
+                        }
                     }
                 }
                 .txt{
@@ -2004,11 +2033,11 @@
 
 // ===================thankyou_main======
 .thankyou_main{
-    background: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9);;
+    background: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9);
     &:before{
         @include pos;
         content: '';
-        background-color: #00000041;
+        background-color: #00000020;
     }
 }
 .thankyou_pg{
@@ -2188,4 +2217,95 @@
         }
       }
     }
+  }
+
+  button{
+    &.go_back{
+        @include pos($pos:fixed,$b:4rem,$r:4rem,$l:null,$t:null);
+        width: 5rem;
+        height: 5rem;
+        @include radius(50px);
+        overflow: hidden;
+        padding: .7rem;
+        background: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9);
+        border: none;
+        box-shadow: $shadow2;
+        opacity: 0;
+        visibility: hidden;
+        @include trans;
+        
+        &.show {
+            opacity: 1;
+            visibility: visible;
+            @include trans;
+        }
+        &.hide {
+            opacity: 0;
+            visibility: hidden;
+            @include trans;
+        }
+        &:hover{
+            @include trans;
+            opacity: 0.7;
+        }
+        img{
+            @include object(contain);
+        }
+    }
+  }
+
+
+//   =====dropdown======
+
+._dropdown {
+    position: relative;
+    
+    .toggleButton {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+        position: relative;
+        @include chevron;
+        background-position: right 1.5rem center!important;
+        background-repeat: no-repeat!important;
+        padding-right: 3rem !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      
+      .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-radius: 4px;
+        margin-top: 4px;
+        z-index: 1000;
+        list-style: none;
+        padding: 23px;
+        max-height: 200px;
+        overflow-y: auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        .menuItem {
+            padding: 8px 12px;
+            font-size: 1.8rem;
+            font-family: "pera-font";
+            cursor: pointer;
+            @include trans;
+            &:first-child{
+                padding-top: 0;
+            }
+            &:hover {
+               color: $color;
+                @include trans;
+              }
+          }
+          
+      }
+      
+      
   }

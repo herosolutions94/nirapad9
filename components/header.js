@@ -53,9 +53,9 @@ export default function Header({data}) {
                   <ul className="flex">
                       <li>
                         <ul>
-                          <li><h5>Staffing</h5></li>
+                          <li><Link href="/staffing" onClick={closeDropdown}><h5>Staffing</h5></Link></li>
                           <li>
-                            <Link href="/staffing" onClick={closeDropdown}>
+                            <Link href="/microsoft-staffing" onClick={closeDropdown}>
                             Microsoft
                             </Link>
                           </li>
@@ -78,9 +78,9 @@ export default function Header({data}) {
                       </li>
                       <li>
                         <ul>
-                          <li><h5>Consulting</h5></li>
+                          <li><Link href="/consulting" onClick={closeDropdown}><h5>Consulting</h5></Link></li>
                           <li>
-                            <Link href="/consulting" onClick={closeDropdown}>
+                            <Link href="/micosoft-staffing" onClick={closeDropdown}>
                             Microsoft
                             </Link>
                           </li>

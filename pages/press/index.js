@@ -21,25 +21,25 @@ export default function Press() {
                     <div className="flex">
                         <div className="col">
                             <div className="_inner">
-                                <Link href="" className="image">
+                                <Link href="/press/detail" className="image">
                                     <img src="/images/post2.png" alt="" />
                                 </Link>
                                 <div className="txt">
-                                    <h2><Link href="">Discover NirApad9's comprehensive service</Link></h2>
+                                    <h2><Link href="/press/detail">Discover NirApad9's comprehensive service</Link></h2>
                                     <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                    <Link href="">Read More {">>"}</Link>
+                                    <Link href="/press/detail">Read More {">>"}</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col">
                             <div className="_inner">
-                                <Link href="" className="image">
+                                <Link href="/press/detail" className="image">
                                     <img src="/images/post2.png" alt="" />
                                 </Link>
                                 <div className="txt">
-                                    <h2><Link href="">Discover NirApad9's comprehensive service</Link></h2>
+                                    <h2><Link href="/press/detail">Discover NirApad9's comprehensive service</Link></h2>
                                     <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                    <Link href="">Read More {">>"}</Link>
+                                    <Link href="/press/detail">Read More {">>"}</Link>
                                 </div>
                             </div>
                         </div>
@@ -53,73 +53,73 @@ export default function Press() {
                 <div className="flex">
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/press/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/press/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/press/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/press/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/press/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/press/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/press/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/press/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/press/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/press/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="_inner">
-                            <Link href="" className="image">
+                            <Link href="/press/detail" className="image">
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="">Meet NirApad9</Link></h2>
+                                <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
-                                <Link href="">Read More {">>"}</Link>
+                                <Link href="/press/detail">Read More {">>"}</Link>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ export default function Press() {
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
               <div className="btn_blk">
-                <Link href="" className="site_btn">Talk to us</Link>
+                <Link href="/contact" className="site_btn">Talk to us</Link>
               </div>
             </div>
           </div>

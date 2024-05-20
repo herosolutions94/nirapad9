@@ -155,7 +155,7 @@ export default function Blog() {
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
               <div className="btn_blk">
-                <Link href="/blog/detail" className="site_btn">Talk to us</Link>
+                <Link href="/contact" className="site_btn">Talk to us</Link>
               </div>
             </div>
           </div>

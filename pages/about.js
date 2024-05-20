@@ -14,10 +14,12 @@ export default function About() {
   }
   const testi = {
     slidesToShow: 2,
+    cssEase: 'linear',
     slidesToScroll: 1,
-    autoplay: true,
+    speed: 15000,
     infinite: true,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     arrows: false,
     dots: false,
     responsive: [
@@ -556,6 +558,40 @@ export default function About() {
                 </div>
               </div>
             </div>
+            <div className="item">
+              <div className="inner">
+                <div className="inner_inner">
+                  <p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+                  <ReactStars
+                            className="rates"
+                            count={5}
+                            value={5}
+                            size={12}
+                            color1={'#ddd'}
+                            color2={'#F0C91A'}
+                            edit={false}/>
+                  <h4>Vp of HR, Acme Solutions</h4>
+                  <p>Mark Cowel</p>
+                </div>
+              </div>
+            </div>
+            <div className="item">
+              <div className="inner">
+                <div className="inner_inner">
+                  <p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+                  <ReactStars
+                            className="rates"
+                            count={5}
+                            value={5}
+                            size={12}
+                            color1={'#ddd'}
+                            color2={'#F0C91A'}
+                            edit={false}/>
+                  <h4>Vp of HR, Acme Solutions</h4>
+                  <p>Mark Cowel</p>
+                </div>
+              </div>
+            </div>
           </Slider>
         </div>
       </section>
@@ -570,7 +606,7 @@ export default function About() {
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
               <div className="btn_blk">
-                <Link href="" className="site_btn">Talk to us</Link>
+                <Link href="/contact" className="site_btn">Talk to us</Link>
               </div>
             </div>
           </div>

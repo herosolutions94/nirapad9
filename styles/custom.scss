@@ -32,7 +32,7 @@ body{
     main {
         @include flex($flow: column);
         min-height: 100vh;
-        padding-top:11.1rem;
+        padding-top:9.1rem;
         overflow: hidden;
         @include mobile_sm{
           min-height: auto;
@@ -323,7 +323,7 @@ _btn {
             }
         }
         &:hover {
-            background: $primary-color;
+            background: $color;
             // opacity: 0.8;
             color: $light;
             border-color: transparent;
@@ -2744,8 +2744,8 @@ header {
   }
   header & {
     float: left;
-    max-width: 12rem;
-    height: 11rem;
+    max-width: 10rem;
+    height: 9rem;
     transition: all ease 0.5s;
     @include ipad{
       // float: none;
@@ -2804,7 +2804,7 @@ header {
 
 nav {
   @include flex(flex-end, flex-end);
-  height: 9.1rem;
+  height: 8.1rem;
   @include pos($t:null,$b:null,$r:null,$l:21rem);
   margin: auto;
   @include ipad{
@@ -2960,7 +2960,7 @@ nav {
         @include pos($t: calc(100% - 0.4rem), $b: null, $z: 2);
         background: #535353;
         text-align: left;
-        padding: 2rem;
+        padding: 3rem;
         margin-top: 1rem;
         visibility: hidden;
         opacity: 0;
@@ -2973,11 +2973,10 @@ nav {
         pointer-events: none;
         @include trans;
         overflow: hidden;
-        width: 25rem;
-        &.sm{
-          width: 16rem;
-          padding: 1rem 2rem;
-        }
+        width: 30rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
         @include ipad_sm {
           position: static;
           display: none;
@@ -3019,11 +3018,12 @@ nav {
               color: $black;
             }
           }
+          
            a {
             display: block;
             color: $light;
             font-family: 'inter';
-            padding: .5rem 0;
+            padding: .7rem 0;
             text-decoration: none;
             font-size: 1.4rem;
             @include ipad_sm {
@@ -3032,6 +3032,37 @@ nav {
             }
             &:hover {
               color: $color;
+            }
+          }
+          &:first-child , &:last-child{
+            ul{
+              li{
+                &:first-child{
+                  a{
+                    padding-top: 0;
+                  }
+                }
+                &:last-child{
+                  a{
+                    padding-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.sm{
+          width: 20rem;
+          li{
+            &:first-child{
+              a{
+                padding-top: 0;
+              }
+            }
+            &:last-child{
+              a{
+                padding-bottom: 0;
+              }
             }
           }
         }
@@ -3223,6 +3254,9 @@ footer {
       margin: 0;
       @include flex($justify:center);
       gap: 2rem;
+      @include mobile_sm{
+        flex-wrap: wrap;
+      }
       a{
         position: relative;
         &:before{

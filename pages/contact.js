@@ -1,9 +1,17 @@
 import Link from "next/link";
 import React, { useState} from 'react';
+import Dropdown from "../components/custom-drop";
 
 
 export default function Contact() {
-
+    const handleSelect = (option) => {
+        console.log('Selected option:', option);
+      };
+    
+      const options = [
+        { value: 'Consulting Services', label: 'Consulting Services' },
+        { value: 'Staffing Services', label: 'Staffing Services' },
+      ];
   return (
     <main>
       <section className="sub_banner contact_banner">
@@ -59,10 +67,11 @@ export default function Contact() {
                             <div className="txt_blk">
                                 <label>Services</label>
                                 <div className="input_outer">
-                                <select className="input">
+                                {/* <select className="input">
                                     <option>Consulting Services</option>
                                     <option>Staffing Services</option>
-                                </select>
+                                </select> */}
+                                <Dropdown options={options} onSelect={handleSelect} defaultLabel=""/>
                                 </div>
                             </div>
                         </div>

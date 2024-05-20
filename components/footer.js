@@ -1,8 +1,13 @@
 import Link from "next/link"
-import React from 'react'
-
+import React,{ useState, useEffect } from 'react'
+import { useRouter } from "next/router";
+import BackTop from "./backtop";
 export default function Footer() {
+  const router = useRouter();
+  const { pathname } = router;
+  const excludedPaths = ['/about', '/announcements', '/press'];
     return (
+      <>
       <footer>
           <div className="contain">
             <div className="flex">
@@ -90,12 +95,15 @@ export default function Footer() {
            
             <div className="copyright">
               <p>
-                <span>Copy</span>
-                <Link href="/terms" >Terms</Link>
-                <Link href="/privacy-policy">Privacy</Link>
+                <span>© Copywrite 2024</span>
+                <Link href="/terms" >Terms & Condition </Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </p>
             </div>
           </div>
         </footer>
+        {!excludedPaths.includes(pathname) && <BackTop />}
+        
+        </> 
     )
   }

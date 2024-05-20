@@ -13,10 +13,12 @@ import Map from "./loader/map";
 export default function MainPage() {
   const testi = {
     slidesToShow: 2,
+    cssEase: 'linear',
     slidesToScroll: 1,
-    autoplay: true,
+    speed: 15000,
     infinite: true,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     arrows: false,
     dots: false,
     responsive: [
@@ -40,7 +42,7 @@ export default function MainPage() {
               <h1>Transform Staffing</h1>
               <h3>Build Your Dream Team with Skilled Professionals, In-Demand Job Openings, and Solutions that Drive Excellence.</h3>
               <div className="btn_blk">
-                <Link href="" className="site_btn">Talk to an Expert</Link>
+                <Link href="/contact" className="site_btn">Talk to an Expert</Link>
               </div>
             </div>
             <div className="colR">
@@ -60,7 +62,7 @@ export default function MainPage() {
               </div>
               <p>Welcome to NirApad9, your gateway to a streamlined talent acquisition journey. Our talent partners are masters at identifying precise skills and revolutionizing the talent discovery landscape. We value your time immensely, meticulously screening candidates to deliver only the finest choices for your company. Beyond mere recruitment, our specialty is crafting harmonious matches that benefit organizations and individuals, ensuring sustained prosperity and fulfillment. Let us handle the hiring complexities while you focus on building a dynamic team driving progress and innovation.</p>
               <div className="btn_blk text-center">
-                <Link href="" className="site_btn">Get To Know Us </Link>
+                <Link href="/about" className="site_btn">Get To Know Us </Link>
               </div>
           </div>
           <div className="devide_line_color"></div>
@@ -82,7 +84,7 @@ export default function MainPage() {
                   </div>
                   <p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
                   <div className="btn_blk text-center">
-                    <Link href="" className="site_btn">Read More</Link>
+                    <Link href="/staffing" className="site_btn">Read More</Link>
                   </div>
                 </div>
               </div>
@@ -93,7 +95,7 @@ export default function MainPage() {
                   </div>
                   <p>Revolutionize talent management with strategic guidance and innovative solutions.</p>
                   <div className="btn_blk text-center">
-                    <Link href="" className="site_btn">Read More</Link>
+                    <Link href="/consulting" className="site_btn">Read More</Link>
                   </div>
                 </div>
               </div>
@@ -375,7 +377,7 @@ export default function MainPage() {
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
               <div className="btn_blk">
-                <Link href="" className="site_btn">Talk to us</Link>
+                <Link href="/contact" className="site_btn">Talk to us</Link>
               </div>
             </div>
           </div>
