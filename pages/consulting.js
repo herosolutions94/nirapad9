@@ -42,7 +42,61 @@ export default function Consulting() {
           </div>
         </div>
       </section>
-      <section className="feature_consulting_sec">
+	  <section id="staffing_solutions" style={{backgroundImage: "url('/images/staffing_solutions_img.jpg')"}}>
+	  	<div class="devide_line_color"></div>
+		<div className="contain">
+			<div className="sec_heading text-center">
+				<h2>Types of Staffing Solutions We Provide</h2>
+			</div>
+			<div className="wrapper">
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f1.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Time & Materials</h4>
+							<p>Flexibility with time spent and materials used, adapting seamlessly to changes in project scope.</p>
+						</div>
+					</div>
+				</div>
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f3.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Project-Based Consulting</h4>
+							<p>Achieve specific, predefined outcomes with expertise tailored to your project&lsquo;s demands.</p>
+						</div>
+					</div>
+				</div>
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f2.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Master Service Agreement (MSA)</h4>
+							<p>Streamline future engagements with a predefined agreement outlining terms and services.</p>
+						</div>
+					</div>
+				</div>
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f4.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Offshore</h4>
+							<p>Access global talent for cost-effective, high-quality consulting solutions around the clock.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </section>
+      {/* <section className="feature_consulting_sec">
         <div className="contain">
             <div className="devide_line_color"></div>
             <div className="sec_heading text-center">
@@ -111,7 +165,7 @@ export default function Consulting() {
                 </div>
             </div>
         </div>
-      </section>
+      </section> */}
       <section className="advantages_staffing_sec">
         <div className="contain">
             <div className="devide_line_color"></div>

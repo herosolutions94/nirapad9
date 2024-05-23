@@ -28,41 +28,95 @@ export default function Staffing() {
             </div>
         </div>
       </section>
+	  <section id="staffing_solutions" style={{backgroundImage: "url('/images/staffing_solutions_img.jpg')"}}>
+	  	<div class="devide_line_color"></div>
+		<div className="contain">
+			<div className="sec_heading text-center">
+				<h2>Types of Staffing Solutions We Provide</h2>
+			</div>
+			<div className="wrapper">
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f1.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Full Time Equivalent (FTE) Staffing</h4>
+							<p>Providing dedicated, long-term personnel solutions for seamless team integration and productivity.</p>
+						</div>
+					</div>
+				</div>
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f3.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Corp-to-Corp (C2C) Staffing</h4>
+							<p>Facilitating flexible business collaborations through strategic talent partnerships.</p>
+						</div>
+					</div>
+				</div>
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f2.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Contract-to-hire (C2H) staffing</h4>
+							<p>Offering a pathway for companies to assess and transition temporary hires into permanent roles.</p>
+						</div>
+					</div>
+				</div>
+				<div className="column">
+					<div className="solutions_block">
+						<div className="icon">
+							<img src="/images/f4.svg" alt="" />
+						</div>
+						<div className="text">
+							<h4>Managed Service Provider (MSP) staffing</h4>
+							<p>Streamlining workforce management through expert oversight and optimization of external talent resources.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </section>
       <section className="advantages_staffing_sec">
         <div className="contain">
             <div className="devide_line_color"></div>
-            <div className="cntnt">
-                <div className="sec_heading text-center">
-                    <h2>Advantages</h2>
+            <div className="cntnt text-center">
+                <div className="sec_heading">
+                    <h2>Unlocking Your Competitive Edge: Our Key Advantages</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
+                <p>We differentiate ourselves through a unique staffing model that offers unparalleled advantages to employers and job seekers. Our approach transcends traditional staffing services, revolutionizing the recruitment process with the following innovations: </p>
             </div>
             <div className="list_advantage">
                 <div className="inner_list">
-                    <div className="image_icon">
-                      <img src="/images/circle.svg" alt="" />
+                    <div className="image_icon" style={{backgroundImage:"url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_01.png" alt="" className="mini_img" />
                     </div>
                     <div className="txt_cntnt">
-                      <h4>Access to Specialized Talent:</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                      <h4>Talent Partner Precision:</h4>
+                      <p>Our network of talent partners boasts a diverse range of technical and industry-related skills. Each candidate is carefully matched with a talent partner who excels in the required skill set, ensuring efficient and precise assessments.</p>
                     </div>
                 </div>
                 <div className="inner_list">
-                    <div className="image_icon">
-                      <img src="/images/circle.svg" alt="" />
+                    <div className="image_icon" style={{backgroundImage:"url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_02.png" alt="" className="mini_img" />
                     </div>
                     <div className="txt_cntnt">
-                      <h4>Years in Operation:</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                      <h4>Cultural Fit Assessment:</h4>
+                      <p>We recognize the importance of cultural fit alongside technical expertise. Our recruiters conduct thorough assessments to ensure candidates align with the company's culture and values. </p>
                     </div>
                 </div>
                 <div className="inner_list">
-                    <div className="image_icon">
-                      <img src="/images/circle.svg" alt="" />
+                    <div className="image_icon" style={{backgroundImage:"url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_03.png" alt="" className="mini_img" />
                     </div>
                     <div className="txt_cntnt">
-                      <h4>Subject Matter Expertise:</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                      <h4>Dynamic Engagement Strategy:</h4>
+                      <p>We prioritize feedback and ongoing communication. Our process includes continuous engagement with candidates and clients, refining our matching process and addressing evolving needs.</p>
                     </div>
                 </div>
             </div>
