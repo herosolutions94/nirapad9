@@ -44,8 +44,8 @@ export default function MicrosoftStaffing() {
       <section className="advantages_staffing_sec">
         <div className="contain">
             <div className="devide_line_color"></div>
-            <div className="cntnt">
-                <div className="sec_heading text-center">
+            <div className="cntnt text-center">
+                <div className="sec_heading">
                     <h2>Advantages of Our Microsoft Staffing </h2>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Et malesuada fames ac turpis egestas. Duis tristique sollicitudin nibh sit. Vulputate dignissim </p>
@@ -84,8 +84,8 @@ export default function MicrosoftStaffing() {
       <section className="choose_staffing">
         <div className="contain">
           <div className="devide_line_color"></div>
-          <div className="cntnt">
-              <div className="sec_heading text-center">
+          <div className="cntnt text-center">
+              <div className="sec_heading">
                   <h2>Why Choose us for Staffing</h2>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
@@ -133,8 +133,8 @@ export default function MicrosoftStaffing() {
       <section className="choose_staffing p_b_0">
         <div className="contain">
           <div className="devide_line_color"></div>
-          <div className="cntnt">
-              <div className="sec_heading text-center">
+          <div className="cntnt text-center">
+              <div className="sec_heading">
                   <h2>Proven Success Rate for Microsoft Staffing</h2>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Et malesuada fames ac turpis egestas. Duis tristique sollicitudin nibh sit. Vulputate dignissim suspendisse in est ante in nibh. Donec enim diam.</p>

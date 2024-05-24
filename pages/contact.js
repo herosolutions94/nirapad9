@@ -25,7 +25,8 @@ export default function Contact() {
                 <div className="sec_heading">
                     <h2>Talk To us</h2>
                 </div>
-                <p>Fill Out the form Below and we’ll get in touch with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                <p>We are eager to hear from you, whether you’re seeking innovative staffing solutions, exploring potential career opportunities, or need customized quality consulting to enhance your growth. Our team is here to assist. </p>
+				<p>Please fill out the form below, and one of our team members will reach out, to discuss how we can collaborate to achieve your goals. Your journey towards revolutionizing recruitment with industry-led technological standards starts here. Let’s create impactful connections together! </p>
             </div>
             <div className="form_blk">
                 <div className="devide_line_color"></div>

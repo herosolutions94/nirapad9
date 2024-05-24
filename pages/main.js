@@ -84,7 +84,7 @@ export default function MainPage() {
                   </div>
                   <p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
                   <div className="btn_blk text-center">
-                    <Link href="/staffing" className="site_btn">Read More</Link>
+                    <Link href="/staffing" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function MainPage() {
                   </div>
                   <p>Revolutionize talent management with strategic guidance and innovative solutions.</p>
                   <div className="btn_blk text-center">
-                    <Link href="/consulting" className="site_btn">Read More</Link>
+                    <Link href="/consulting" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
                   </div>
                 </div>
               </div>
@@ -377,7 +377,7 @@ export default function MainPage() {
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
               <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to us</Link>
+                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
               </div>
             </div>
           </div>
