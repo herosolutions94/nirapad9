@@ -27,12 +27,12 @@ export default function Consulting() {
           <div className="flex">
             <div className="colL">
               <div className="sec_heading">
-                <h2>Consulting </h2>
+                <h2>Our Consulting Services </h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. </p>
-              <div className="btn_blk">
+              <p>NirApad9 can tackle complex challenges across industries with expert consulting services, combining traditional methods and extensive partnerships to provide customized solutions. Our team's expertise spans operational efficiency, technology implementation, and process streamlining. </p>
+              {/* <div className="btn_blk">
                 <Link href="" className="site_btn">Learn More</Link>
-              </div>
+              </div> */}
             </div>
             <div className="colR">
               <div className="image">
@@ -169,38 +169,47 @@ export default function Consulting() {
       <section className="advantages_staffing_sec">
         <div className="contain">
             <div className="devide_line_color"></div>
-            <div className="cntnt">
-                <div className="sec_heading text-center">
-                    <h2>Advantages</h2>
+            <div className="cntnt text-center">
+                <div className="sec_heading">
+                    <h2>Unlocking Your Competitive Edge: Our Key Advantages</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
+                <p>We differentiate ourselves through a unique consulting model that offers unparalleled advantages to businesses and stakeholders. Our approach transcends traditional consulting services, revolutionizing business strategy and operations with the following innovations: </p>
             </div>
             <div className="list_advantage">
                 <div className="inner_list">
-                    <div className="image_icon">
-                      <img src="/images/circle.svg" alt="" />
+                    <div className="image_icon" style={{backgroundImage: "url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_04.png" alt="" className="mini_img" />
                     </div>
                     <div className="txt_cntnt">
-                      <h4>Access to Specialized Talent:</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                      <h4>Expert Guidance:</h4>
+                      <p>Access to seasoned professionals with deep industry knowledge and expertise, providing tailored solutions that drive competitive advantage. </p>
                     </div>
                 </div>
                 <div className="inner_list">
-                    <div className="image_icon">
-                      <img src="/images/circle.svg" alt="" />
+                    <div className="image_icon" style={{backgroundImage: "url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_05.png" alt="" className="mini_img" />
                     </div>
                     <div className="txt_cntnt">
-                      <h4>Years in Operation:</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                      <h4>Innovative Solutions:</h4>
+                      <p>Stay ahead of industry trends with innovative solutions that harness the latest technologies and strategic insights. </p>
                     </div>
                 </div>
                 <div className="inner_list">
-                    <div className="image_icon">
-                      <img src="/images/circle.svg" alt="" />
+                    <div className="image_icon" style={{backgroundImage: "url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_06.png" alt="" className="mini_img" />
                     </div>
                     <div className="txt_cntnt">
-                      <h4>Subject Matter Expertise:</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. EtDuis tristique sollicitudin nibh sit</p>
+                      <h4>Customization:</h4>
+                      <p>Provide solutions that are customized to meet your specific business needs and challenges, ensuring relevance and effectiveness</p>
+                    </div>
+                </div>
+                <div className="inner_list">
+                    <div className="image_icon" style={{backgroundImage: "url('/images/circle.svg')"}}>
+                      <img src="/images/stafing_advantage_07.png" alt="" className="mini_img" />
+                    </div>
+                    <div className="txt_cntnt">
+                      <h4>Objective Perspective:</h4>
+                      <p>Gain an external, objective perspective on your business challenges and opportunities, leading to more informed decision-making. </p>
                     </div>
                 </div>
             </div>
@@ -211,9 +220,9 @@ export default function Consulting() {
           <div className="devide_line_color"></div>
           <div className="cntnt">
               <div className="sec_heading text-center">
-                  <h2>Why Choose us for Staffing</h2>
+                  <h2>Why NirApad9 is Your Top Choice for Consulting Solutions? </h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p> */}
           </div>
           <div className="flex">
             <div className="col">
@@ -258,11 +267,11 @@ export default function Consulting() {
       <section className="technology_sec">
         <div className="contain">
           <div className="devide_line_color"></div>
-          <div className="cntnt">
-              <div className="sec_heading text-center">
-                  <h2>Technolgies</h2>
+          <div className="cntnt text-center">
+              <div className="sec_heading">
+                  <h2>Our Technologies</h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
+              <p>We optimize business processes and ensure alignment with our clients' strategic objectives. Our Consulting services addresses challenges by providing comprehensive evaluation and implementation services, leveraging expertise in technologies such as below: </p>
           </div>
           <div className="flex">
             <div className="col">

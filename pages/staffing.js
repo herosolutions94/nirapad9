@@ -18,7 +18,8 @@ export default function Staffing() {
                     <div className="sec_heading">
                         <h2>Overview</h2>
                     </div>
-                    <p>Time and Materials consulting services. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>In today's dynamic business environment, staffing partners play a pivotal role in bridging the gap between talented individuals seeking employment and organizations in need of skilled personnel. At NirApad9, we take pride in being more than just matchmakers; we&lsquo;re the architects of the future workforce.</p>
+					<p>Our forward-thinking staffing solutions transcend traditional approaches, reflecting our commitment to revolutionizing the industry. Rooted in technology and human-centric methodologies, we don't just match; we architect the future workforce. Our comprehensive services navigate the job market's complexities, ensuring companies discover the right talent while candidates secure their ideal positions.</p>
                 </div>
                 <div className="colR">
                     <div className="image">
@@ -125,46 +126,46 @@ export default function Staffing() {
       <section className="staffing_process_sec">
         <div className="contain">
           <div className="devide_line_color"></div>
-          <div className="cntnt">
-              <div className="sec_heading text-center">
-                  <h2>Staffing Process</h2>
+          <div className="cntnt text-center">
+              <div className="sec_heading">
+                  <h2>Our Proven Process Delivers Top Talent</h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.</p>
+              <p>The staffing process is meticulously designed to ensure a seamless and dynamic match between our clients and candidates. Here's how we achieve this:</p>
           </div>
           <div className="flex">
             <div className="col">
               <div className="inner">
-                <div className="blk_circle"></div>
+                <div className="blk_circle"><img src="/images/staffing_process_sec_01.png" alt="" /></div>
                 <div className="blk_txt">
-                  <h3>IT Staffing</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <h3>Client Assessment</h3>
+                  <p>We start by deeply understanding our client's needs, culture, and challenges.</p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div className="inner">
-                <div className="blk_circle"></div>
+                <div className="blk_circle"><img src="/images/staffing_process_sec_02.png" alt="" /></div>
                 <div className="blk_txt">
-                  <h3>IT Staffing</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <h3>Talent Partner Vetting</h3>
+                  <p>Our experts use technology to find candidates and evaluate their cultural fit. </p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div className="inner">
-                <div className="blk_circle"></div>
+                <div className="blk_circle"><img src="/images/staffing_process_sec_03.png" alt="" /></div>
                 <div className="blk_txt">
-                  <h3>IT Staffing</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <h3>Fit Evaluation</h3>
+                  <p>Our candidates undergo thorough assessments by skilled talent partners, ensuring they meet exact job skill requirements. </p>
                 </div>
               </div>
             </div>
             <div className="col">
               <div className="inner">
-                <div className="blk_circle"></div>
+                <div className="blk_circle"><img src="/images/staffing_process_sec_04.png" alt="" /></div>
                 <div className="blk_txt">
-                  <h3>IT Staffing</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                  <h3>Continuous Engagement</h3>
+                  <p>We maintain ongoing communication with clients and candidates to ensure robust feedback.</p>
                 </div>
               </div>
             </div>
@@ -174,14 +175,14 @@ export default function Staffing() {
           <img src="/images/bg-shape-3.png" alt="" />
         </div>
       </section>
-      <section className="choose_staffing">
+      <section className="choose_staffing staffing_page">
         <div className="contain">
           <div className="devide_line_color"></div>
-          <div className="cntnt">
-              <div className="sec_heading text-center">
-                  <h2>Why Choose us for Staffing</h2>
+          <div className="cntnt text-center">
+              <div className="sec_heading">
+                  <h2>Why NirApad9 is Your Top Choice for Talent Solutions? </h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
+              <p>We offer innovative staffing solutions blending technology and a human-centric approach. Our model assesses diverse technological skill sets, supported by talent partner networks for precise candidate matching. Continuous engagement ensures adaptability for evolving niche needs. </p>
           </div>
           <div className="flex">
             <div className="col">
@@ -190,9 +191,9 @@ export default function Staffing() {
                   <img src="/images/choose1.png" alt="" />
                 </div>
                 <div className="blk_txt">
-                  <h3>IT Staffing</h3>
+                  <h3>Comprehensive Talent Matching</h3>
                   <div className="mini_devide_line"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Our algorithms and talent expertise ensure precise candidate matching, saving time and resources in hiring.</p>
                 </div>
               </div>
             </div>
@@ -202,9 +203,9 @@ export default function Staffing() {
                   <img src="/images/choose2.png" alt="" />
                 </div>
                 <div className="blk_txt">
-                  <h3>Design & Development</h3>
+                  <h3>Tech-Savvy Solutions</h3>
                   <div className="mini_devide_line"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>We leverage cutting-edge tech for efficient, industry-tailored solutions, optimizing your workforce.</p>
                 </div>
               </div>
             </div>
@@ -214,9 +215,9 @@ export default function Staffing() {
                   <img src="/images/choose3.png" alt="" />
                 </div>
                 <div className="blk_txt">
-                  <h3>Time & Materials</h3>
+                  <h3>Proactive Support and Engagement</h3>
                   <div className="mini_devide_line"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>We offer proactive support and ongoing communication for long-term success and satisfaction</p>
                 </div>
               </div>
             </div>
@@ -226,11 +227,11 @@ export default function Staffing() {
       <section className="technology_sec">
         <div className="contain">
           <div className="devide_line_color"></div>
-          <div className="cntnt">
-              <div className="sec_heading text-center">
-                  <h2>Technolgies</h2>
+          <div className="cntnt text-center">
+              <div className="sec_heading">
+                  <h2>Our Technologies</h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
+              <p>We streamline the hiring process and ensure the selection of suitable candidates for our clients' business needs. Our Talent Partner Program addresses this challenge by providing comprehensive vetting and assessment services, leveraging expertise in technologies such as below: </p>
           </div>
           <div className="flex">
             <div className="col">
