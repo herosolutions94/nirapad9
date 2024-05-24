@@ -2811,7 +2811,7 @@ nav {
   @include flex(flex-end, flex-end);
   height: 6rem;
   @include pos($t:null,$b:null,$r:null,$l:21rem);
-  margin: 1.5rem auto;
+  margin: 2rem auto 1rem;
 //   padding-bottom: 0.5rem;
   @include ipad{
     height: 6rem;
@@ -2929,7 +2929,7 @@ nav {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        height: 4rem;
+        height: 5rem;
         color: $primary-color;
         text-align: center;
         text-decoration: none;
@@ -2945,7 +2945,7 @@ nav {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        height: 4rem;
+        height: 5rem;
         color: $primary-color;
         text-align: center;
         text-decoration: none;
@@ -2966,7 +2966,7 @@ nav {
         }
       }
       > .sub {
-        @include pos($t: calc(100% - 0.4rem), $b: null, $z: 2);
+        @include pos($t: 100%, $b: null, $z: 2);
         background: #535353;
         text-align: left;
         padding: 3rem;
