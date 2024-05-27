@@ -2348,3 +2348,9 @@
       
       
   }
+
+  .CircularProgressbar{
+    .CircularProgressbar-path {
+        stroke-linecap: unset!important;
+      }
+  }

@@ -1,5 +1,4 @@
-'use client'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { useInView } from "react-intersection-observer";
@@ -7,13 +6,14 @@ import { useInView } from "react-intersection-observer";
 const ProgressProvider = ({ valueStart, valueEnd, children, color, text }) => {
   const [value, setValue] = useState(valueStart);
   const [ref, inView] = useInView({
-    triggerOnce: true, // Trigger only once when the component comes into view
+    triggerOnce: false, // Set to false to trigger every time the component comes into view
     threshold: 0.5, // Amount of the component that must be visible to trigger
   });
 
+  const timeoutIdRef = useRef(null);
+
   useEffect(() => {
     let currentValue = valueStart;
-    let timeoutId;
 
     const step = (valueEnd - valueStart) / 100; // Adjust this divisor for smoother/faster animation
 
@@ -21,17 +21,18 @@ const ProgressProvider = ({ valueStart, valueEnd, children, color, text }) => {
       if (currentValue < valueEnd) {
         currentValue += step;
         setValue(Math.min(currentValue, valueEnd));
-        timeoutId = setTimeout(incrementValue, 10); // Adjust timeout for smoother/faster animation
+        timeoutIdRef.current = setTimeout(incrementValue, 10); // Adjust timeout for smoother/faster animation
       }
     };
 
     if (inView) {
+      setValue(valueStart); // Reset value to start each time it comes into view
       incrementValue();
     } else {
-      clearTimeout(timeoutId);
+      clearTimeout(timeoutIdRef.current);
     }
 
-    return () => clearTimeout(timeoutId);
+    return () => clearTimeout(timeoutIdRef.current);
   }, [inView, valueStart, valueEnd]);
 
   return (
@@ -52,4 +53,3 @@ const ProgressProvider = ({ valueStart, valueEnd, children, color, text }) => {
 };
 
 export default ProgressProvider;
-
