@@ -210,7 +210,7 @@ export default function MainPage() {
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#BBECFB">
+              <ProgressProvider valueStart={10} valueEnd={98} color="#BBECFB">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
 			  <CountUp id="ok" delay={500} end={98} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
@@ -219,7 +219,7 @@ export default function MainPage() {
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#DDC4F9">
+              <ProgressProvider valueStart={10} valueEnd={99} color="#DDC4F9">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
 			  <CountUp id="ok" delay={500} end={99} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
