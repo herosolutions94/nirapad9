@@ -15,7 +15,7 @@ const ProgressProvider = ({ valueStart, valueEnd, children, color, text }) => {
   useEffect(() => {
     let currentValue = valueStart;
 
-    const step = (valueEnd - valueStart) / 100; // Adjust this divisor for smoother/faster animation
+    const step = (valueEnd - valueStart) / 400; // Adjust this divisor for smoother/faster animation
 
     const incrementValue = () => {
       if (currentValue < valueEnd) {
@@ -23,7 +23,7 @@ const ProgressProvider = ({ valueStart, valueEnd, children, color, text }) => {
         setValue(Math.min(currentValue, valueEnd));
         timeoutIdRef.current = setTimeout(incrementValue, 10); // Adjust timeout for smoother/faster animation
       }
-    };
+    };  
 
     if (inView) {
       setValue(valueStart); // Reset value to start each time it comes into view
