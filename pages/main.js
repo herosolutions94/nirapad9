@@ -8,9 +8,18 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import ReactStars from 'react-stars'
 import Map from "./loader/map";
+import CountUp from 'react-countup';
 
 
 export default function MainPage() {
+	const element = <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />
+	useEffect(() => {
+		
+		// let counter_h1 = document.getElementById("counter_h1").innerHTML = style.color;
+		// console.log(counter_h1);
+		console.log("element", element);
+		// <h1 id="counter_h1">asdasd<CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="+" /></h1>
+	}, [])
   const testi = {
     slidesToShow: 2,
     cssEase: 'linear',
@@ -174,41 +183,46 @@ export default function MainPage() {
           <div className="flex">
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#FFD9EB" text="350+">
+              <ProgressProvider valueStart={10} valueEnd={100} color="#FFD9EB">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
+			  <CountUp id="ok" delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="+" />
               </div>
               <h3>Employee Placement</h3>
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#FCE1BF" text="4 Days">
+              <ProgressProvider valueStart={10} valueEnd={100} color="#FCE1BF">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
+			  <CountUp id="ok" delay={500} end={4} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix=" Days" />
               </div>
               <h3>Average Time to Fill</h3>
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#E5F5CE" text="108+">
+              <ProgressProvider valueStart={10} valueEnd={100} color="#E5F5CE">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
+			  <CountUp id="ok" delay={500} end={108} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="+" />
               </div>
               <h3>No. Of Clients we worked with</h3>
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#BBECFB" text="98%">
+              <ProgressProvider valueStart={10} valueEnd={100} color="#BBECFB">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
+			  <CountUp id="ok" delay={500} end={98} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
               </div>
               <h3>Client Satisfaction  & Retention  </h3>
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={100} color="#DDC4F9" text="99%">
+              <ProgressProvider valueStart={10} valueEnd={100} color="#DDC4F9">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
+			  <CountUp id="ok" delay={500} end={99} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
               </div>
               <h3>Employee Satisfaction & Retention </h3>
             </div>

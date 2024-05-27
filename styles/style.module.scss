@@ -261,6 +261,7 @@
                 width: 50%;
             }
             .progress_div{
+				position: relative;
                 width: 20rem;
                 height: 20rem;
                 margin: 0 auto 2rem;
@@ -271,6 +272,12 @@
                 .CircularProgressbar-text{
                     font-family: "inter";
                 }
+				> span {
+					@include flex(center, center);
+					@include pos;
+					font-size: 3.4rem;
+					font-family: "inter";
+				}
             }
             h3{
                 font-size: 2.4rem;
