@@ -41,7 +41,7 @@ body{
             width: 100%;
         }
         @include ipad{
-          padding-top: 6rem;
+        //   padding-top: 6rem;
         }
     }
     @at-root{
@@ -2750,7 +2750,7 @@ header {
     float: left;
     max-width: 10rem;
     height: 6rem;
-	margin-top: 1.5rem;
+	margin: 1.5rem 0;
     transition: all ease 0.5s;
     @include ipad{
       // float: none;
@@ -2851,7 +2851,9 @@ nav {
   @include flex(center,center);
   padding-top: 1rem;
   @include ipad{
-    height: 6rem;
+	  height: 6rem;
+	  padding-top: 0;
+	  margin-top: 1.5rem;
   }
   @include ipad_sm{
     right: 5rem;
@@ -2920,6 +2922,7 @@ nav {
         width: 100%;
         padding: 1rem 0;
         text-align: center;
+		padding: 0;
         .site_btn {
           margin-top: 0.5rem;
         }
@@ -3218,7 +3221,7 @@ footer {
           flex: .7;
         }
         @include ipad_sm{
-          flex: unset;
+          flex: 100%;
         }
       }
       h5{
@@ -3255,6 +3258,9 @@ footer {
         &.f_lnk{
           li{
             margin-bottom: 1.5rem;
+			@include mobile {
+				margin-bottom: 0.8rem;
+			}
           }
         }
       }
@@ -5944,9 +5950,19 @@ li[data-key="notification"], li[data-key="inbox"]{
 	.wrapper {
 		@include flex($flow: wrap);
 		margin-top: 3rem;
+		@include mobile {
+			margin: 2rem -1rem -1rem;
+		}
 		> .column {
 			@include flex;
 			width: 40%;
+			@include mobile {
+				width: 50%;
+				padding: 1rem;
+			}
+			@include mobile_md {
+				width: 100%;
+			}
 			&:nth-child(1),
 			&:nth-child(2),
 			&:nth-child(5),
@@ -5954,6 +5970,9 @@ li[data-key="notification"], li[data-key="inbox"]{
 				margin-right: auto;
 				.solutions_block {
 					margin-right: 30%;
+					@include mobile {
+						margin-right: 0;
+					}
 				}
 			}
 			&:nth-child(3),
@@ -5963,6 +5982,9 @@ li[data-key="notification"], li[data-key="inbox"]{
 				margin-left: auto;
 				.solutions_block {
 					margin-left: 30%;
+					@include mobile {
+						margin-left: 0;
+					}
 				}
 			}
 			&:nth-child(2),
@@ -5970,6 +5992,10 @@ li[data-key="notification"], li[data-key="inbox"]{
 				.solutions_block {
 					margin-left: -5%;
 					margin-right: 35%;
+					@include mobile {
+						margin-left: 0;
+						margin-right: 0;
+					}
 				}
 			}
 			&:nth-child(3),
@@ -5977,6 +6003,10 @@ li[data-key="notification"], li[data-key="inbox"]{
 				.solutions_block {
 					margin-left: 35%;
 					margin-right: -5%;
+					@include mobile {
+						margin-left: 0;
+						margin-right: 0;
+					}
 				}
 			}
 		}
