@@ -12,12 +12,12 @@ import CountUp from 'react-countup';
 
 
 export default function MainPage() {
-	const element = <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />
+	// const element = <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />
 	useEffect(() => {
 		
 		// let counter_h1 = document.getElementById("counter_h1").innerHTML = style.color;
 		// console.log(counter_h1);
-		console.log("element", element);
+		console.log("element", <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />);
 		// <h1 id="counter_h1">asdasd<CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="+" /></h1>
 	}, [])
   const testi = {
@@ -33,6 +33,13 @@ export default function MainPage() {
     responsive: [
       {
         breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 580,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
