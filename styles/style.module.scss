@@ -593,6 +593,10 @@
         background:url(/images/terms-banner.png);
         @include bg;
     }
+    &.for_talent_banner{
+        background:url(/images/for_talent_banner.jpg);
+        @include bg;
+    }
     &:before{
         @include pos;
         content: '';
@@ -2391,3 +2395,163 @@
         stroke-linecap: unset!important;
       }
   }
+
+.for_talent_overview {
+	font-size: 1.8rem;
+}
+
+.for_talent_advantage {
+	font-size: 1.8rem;
+	.in_block {
+		position: relative;
+		z-index: 1;
+		padding: 4rem 12rem;
+		text-align: center;
+		font-size: 2.6rem;
+		border-radius: 10px;
+		overflow: hidden;
+		&:not(:nth-last-child(1)) {
+			margin-bottom: 2rem;
+		}
+        &:before{
+			content: "";
+			position: absolute;
+			inset: 0;
+			@include radius(10px);
+			border: 2px solid transparent;
+			background: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9) border-box;
+			mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+			mask-composite: exclude;
+			z-index: -1;
+        }
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 16rem;
+			background: linear-gradient(90deg, #FFDAEB 0%, #FDD1C1 15%, #FCF6BD 25%, #D0F4DE 50%, #A9DEF9 75%, #E4C1F9 100%);
+			clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        }
+		>.angle {
+			position: absolute;
+			top: 5px;
+			right: 0;
+			bottom: 5px;
+			width: 16rem;
+			z-index: 1;
+			>img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+.for_talent_experience {
+	padding-top: 0;
+	overflow: hidden;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		.image {
+			position: relative;
+			width: 90rem;
+			min-width: 90rem;
+			margin-left: -30rem;
+			z-index: 1;
+		}
+		.content {
+			background: rgba(226, 201, 201, 20%);
+			padding: 8rem;
+			margin-left: -14rem;
+			margin-right: -1.5rem;
+			.text {
+				font-size: 1.8rem;
+				&:not(:nth-last-child(1)) {
+					margin-bottom: 5rem;
+				}
+				h4 {
+					font-size: 2.6rem;
+					font-family: "sub-heading-font";
+				}
+				>button {
+					font-family: "sub-heading-font";
+					background-image: linear-gradient(90deg, #F80DA8, #0B15F9);
+					background-size: 100%;
+					-webkit-background-clip: text;
+					-moz-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					-moz-text-fill-color: transparent;
+					padding: 0;
+					border: 0;
+				}
+			}
+		}
+	}
+}
+
+.for_talent_testimonial {
+	@media (min-width: 992px) {
+		.contain {
+			padding: 0 3rem;
+		}
+	}
+	.slider_testi {
+		margin-top: 3rem;
+		.slick-list {
+			margin: -1rem;
+		}
+		.item {
+			padding: 1rem;
+			.inner {
+				margin: 0;
+				padding-bottom: 10rem;
+			}
+		}
+		.slick-dots {
+			bottom: 50px;
+		}
+	}
+}
+
+.for_talent_article {
+	.wrapper {
+		display: flex;
+		flex-flow: wrap;
+		margin: -1.5rem;
+		>.column {
+			width: 33.3334%;
+			padding: 1.5rem;
+		}
+	}
+	.inner {
+		position: relative;
+		padding: 3rem;
+		font-size: 1.8rem;
+		@include radius(20px);
+		z-index: 1;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+		&:not(:nth-last-child(1)) {
+			margin-bottom: 3rem;
+		}
+		&.active {
+			background: #E9F2F6;
+			&:before{
+				display: none;
+			}
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			inset: 0;
+			@include radius(20px);
+			border: 2px solid transparent;
+			background: linear-gradient(to right, #FFDAEB, #FDD1C1, #FCF6BD, #D0F4DE, #A9DEF9, #E4C1F9) border-box;
+			mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+			mask-composite: exclude;
+			z-index: -1;
+        }
+	}
+}
