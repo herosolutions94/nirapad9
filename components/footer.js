@@ -41,6 +41,9 @@ export default function Footer() {
                   <li>
                     <Link href="/consulting">Consulting Services</Link>
                   </li>
+                  <li>
+                    <Link href="/for-talent">For Talent</Link>
+                  </li>
                   
                 </ul>
               </div>
@@ -60,9 +63,9 @@ export default function Footer() {
                   <li>
                     <Link href="/announcements">Announcements</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="">Careers</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
@@ -95,7 +98,7 @@ export default function Footer() {
            
             <div className="copyright">
               <p>
-                <span>© Copywrite 2024</span>
+                <span>NirApad9&copy;Copyright 2024</span>
                 <Link href="/terms" >Terms & Condition </Link>
                 <Link href="/privacy-policy">Privacy Policy</Link>
               </p>
