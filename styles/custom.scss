@@ -2940,7 +2940,13 @@ nav {
         font-size: 1.6rem;
         &:hover,
         &.active {
-          color: $color !important;
+        //   color: $color !important;
+			background-image: linear-gradient(90deg, #f80da8, #0b15f9);
+			background-size: 100%;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
         }
       }
       > .drop_btn {
@@ -3089,6 +3095,14 @@ nav {
       }
       &.drop > a , &.drop > .drop_btn{
         position: relative;
+		&:hover {
+			background-image: linear-gradient(90deg, #f80da8, #0b15f9);
+			background-size: 100%;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+		}
         &:after {
           content: "";
         //   @include chev;
