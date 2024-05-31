@@ -76,7 +76,8 @@ export default function MainPage() {
               <div className="sec_heading">
                 <h2>Meet NirApad9 – Your Customized Staffing Solution </h2>
               </div>
-              <p>Welcome to NirApad9, your gateway to a streamlined talent acquisition journey. Our talent partners are masters at identifying precise skills and revolutionizing the talent discovery landscape. We value your time immensely, meticulously screening candidates to deliver only the finest choices for your company. Beyond mere recruitment, our specialty is crafting harmonious matches that benefit organizations and individuals, ensuring sustained prosperity and fulfillment. Let us handle the hiring complexities while you focus on building a dynamic team driving progress and innovation.</p>
+              <p>Welcome to NirApad9, your gateway to a streamlined talent acquisition journey. Our talent partners are masters at identifying precise skills and revolutionizing the talent discovery landscape. We value your time immensely, meticulously screening candidates to deliver only the finest choices for your company. </p>
+			  <p>Beyond mere recruitment, our specialty is crafting harmonious matches that benefit organizations and individuals, ensuring sustained prosperity and fulfillment. Let us handle the hiring complexities while you focus on building a dynamic team driving progress and innovation.</p>
               <div className="btn_blk text-center">
                 <Link href="/about" className="site_btn">Get To Know Us </Link>
               </div>
@@ -112,6 +113,17 @@ export default function MainPage() {
                   <p>Revolutionize talent management with strategic guidance and innovative solutions.</p>
                   <div className="btn_blk text-center">
                     <Link href="/consulting" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="inner">
+                  <div className="sec_heading">
+                    <h2>Talent</h2>
+                  </div>
+                  <p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
+                  <div className="btn_blk text-center">
+                    <Link href="/for-talent" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
                   </div>
                 </div>
               </div>
@@ -185,7 +197,7 @@ export default function MainPage() {
             <div className="sec_heading">
               <h2>Proven Success Rate</h2>
             </div>
-            <p>Experience our proven success: delivering results, exceeding expectations, and driving your success forward. </p>
+            <p>Experience our proven success: delivering results, exceeding expectations, and driving your success. </p>
           </div>
           <div className="flex">
             <div className="col">
@@ -217,19 +229,19 @@ export default function MainPage() {
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={98} color="#BBECFB">
+              <ProgressProvider valueStart={10} valueEnd={99} color="#BBECFB">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
-			  <CountUp id="ok" delay={500} end={98} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
+			  <CountUp id="ok" delay={500} end={99} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
               </div>
               <h3>Client Satisfaction  & Retention  </h3>
             </div>
             <div className="col">
               <div className="progress_div">
-              <ProgressProvider valueStart={10} valueEnd={99} color="#DDC4F9">
+              <ProgressProvider valueStart={10} valueEnd={98} color="#DDC4F9">
                 {value => <CircularProgressbar value={value}/>}
               </ProgressProvider>
-			  <CountUp id="ok" delay={500} end={99} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
+			  <CountUp id="ok" delay={500} end={98} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="%" />
               </div>
               <h3>Employee Satisfaction & Retention </h3>
             </div>

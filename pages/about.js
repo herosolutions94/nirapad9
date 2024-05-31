@@ -44,13 +44,22 @@ export default function About() {
         <div className="contain">
           <div className="flex">
             <div className="colL">
-              <p>At NirApad9, we aim to remain at the forefront of innovative staffing solutions, committed to delivering value through a deep understanding of the industry's needs.  Established in 2020 during significant changes in the global workforce, NirApad9 was founded by our CEO, Naveen Kolla, based on his personal experiences as a candidate and as a hiring manager. He identified key issues in the staffing industry, such as a lack of reasonable skill assessment by recruiters and inconsistencies between candidates claimed and actual abilities, which motivated us to take a unique approach to staffing beyond traditional methods. Our goal is to revolutionize recruitment by prioritizing rigorous vetting processes and embracing technological advancements, ensuring that candidates possess the necessary skills and excel in navigating cutting-edge technological environments. </p>
-              <p>We provide cutting-edge staffing solutions tailored to meet our clients' unique needs. Our team of experts possesses a deep understanding of the industry and is committed to delivering value through innovative and effective strategies. We pride ourselves on staying up-to-date with the latest trends and technologies to ensure our clients receive the most relevant and comprehensive solutions. </p>
+              <p>At NirApad9, we aim to remain at the forefront of innovative staffing solutions, committed to delivering value through a deep understanding of the industry's needs.  Established in 2020 during significant changes in the global workforce, NirApad9 was founded by our CEO, Naveen Kolla, based on his personal experiences as a candidate and hiring manager. He identified key issues in the staffing industry, such as a lack of reasonable skill assessment by recruiters and inconsistencies between candidate's claimed and actual abilities, which motivated us to take a unique approach to staff beyond traditional methods. </p>
+			  <p>Our goal is to revolutionize recruitment by prioritizing rigorous vetting processes and embracing technological advancements, ensuring that candidates possess the necessary skills and excel in navigating cutting-edge technological environments.</p>
+			  <p>We provide cutting-edge staffing solutions tailored to meet our clients' unique needs. Our team of experts possesses a deep understanding of the industry and is committed to delivering value through innovative and effective strategies. We pride ourselves on staying up-to-date with the latest trends and technologies to ensure our clients receive the most relevant and comprehensive solutions</p>
             </div>
             <div className="colR">
               <div className="image">
                 <img src="/images/abt1.png" alt="" />
               </div>
+            </div>
+            <div className="col w-100">
+				<div className="cntnt text-center">
+					<div className="sec_heading">
+						<h2>Cultivating Company Culture for Growth, Collaboration, and Innovation</h2>
+					</div>
+			  		<p>Central to NirApad9 are our core values of growth, opportunity, collaboration, and ownership, which drive our operations and relationships. We foster an environment where employees are encouraged to excel across various domains, such as technical expertise, adaptability, teamwork, and proactive engagement, recognizing the importance of versatility and continuous learning for professional development. By embodying these values, we elevate employee careers and provide clients with the highest caliber of innovative, technology-driven, and human-centric solutions.</p>
+				</div>
             </div>
           </div>
         </div>
@@ -67,7 +76,7 @@ export default function About() {
               <div className="sec_heading">
                 <h2>Our Mission</h2>
               </div>
-              <p>We foster collective and organic growth through a dynamic approach to staffing and technology. Our ethos is grounded in the belief that our employees’ and the company’s progress are interlinked. Together, we're committed to rising by achieving excellence in a changing landscape. </p>
+              <p>We foster collective and organic growth through a dynamic approach to staffing and technology. Our ethos is grounded in the belief that our employees and the company's progress are interlinked. Together, we're committed to rising by achieving excellence in a changing landscape. </p>
             </div>
           </div>
         </div>
@@ -595,7 +604,7 @@ export default function About() {
           </Slider>
         </div>
       </section>
-      <section className="cta_sec">
+      <section className="cta_sec about_page_sec">
         <div className="contain">
           <div className="flex">
             <div className="colL">

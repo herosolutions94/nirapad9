@@ -14,10 +14,11 @@ export default function Consulting() {
       <section className="consulting_overview">
         <div className="contain">
             <div className="cntnt text-center">
-                <div className="sec_heading">
+                {/* <div className="sec_heading">
                     <h2>Overview</h2>
-                </div>
-                <p>Time and Materials consulting services. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div> */}
+                <p>We are dedicated to solving complex challenges across various industries through our expert consulting services. Our approach combines traditional methodologies with an extensive network of partnerships to deliver customized solutions, tailored to each client's unique needs. Whether you aim to enhance operational efficiency, implement new technologies, or streamline business processes, our team is equipped with the knowledge and expertise to guide you to success.</p>
+				<p>Our services cover a broad-spectrum including risk management, compliance, digital transformation, and specific industry solutions, ensuring a well-rounded approach to address all your business challenges. We specialize in consulting for leading technologies including SAP, Workday, Microsoft, and Zoho, ensuring you receive the most advanced and relevant advice. Our expertise extends to deploying these technologies to address specific issues such as improving supply chain logistics, enhancing customer relationship management, and boosting data security. </p>
             </div>
             <div className="devide_line_color"></div>
         </div>
@@ -231,9 +232,9 @@ export default function Consulting() {
                   <img src="/images/choose1.png" alt="" />
                 </div>
                 <div className="blk_txt">
-                  <h3>IT Staffing</h3>
+                  <h3>Tailored Expertise</h3>
                   <div className="mini_devide_line"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>NirApad9 offers industry-specific expertise and custom solutions ensuring each is tailored to fit the specific requirements of every client. </p>
                 </div>
               </div>
             </div>
@@ -243,9 +244,9 @@ export default function Consulting() {
                   <img src="/images/choose2.png" alt="" />
                 </div>
                 <div className="blk_txt">
-                  <h3>Design & Development</h3>
+                  <h3>Expert Partnership</h3>
                   <div className="mini_devide_line"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Our vast network of industry-leading partners enhances our service delivery by providing access to specialized knowledge and cutting-edge solutions. </p>
                 </div>
               </div>
             </div>
@@ -255,9 +256,9 @@ export default function Consulting() {
                   <img src="/images/choose3.png" alt="" />
                 </div>
                 <div className="blk_txt">
-                  <h3>Time & Materials</h3>
+                  <h3>Results-Oriented Innovation</h3>
                   <div className="mini_devide_line"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>We focus on delivering measurable outcomes and maintaining competitiveness through innovative, effective strategies.</p>
                 </div>
               </div>
             </div>
