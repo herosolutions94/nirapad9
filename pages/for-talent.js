@@ -82,12 +82,12 @@ export default function ForTalent() {
 							<div className="text">
 								<h4>Upload Your Resume</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-								<button type="button">Upload Resume &gt;&gt;</button>
+								<Link href="/upload-cv" className="link">Upload Resume &gt;&gt;</Link>
 							</div>
 							<div className="text">
 								<h4>Search For Jobs</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-								<button type="button">Search Jobs &gt;&gt;</button>
+								<button type="button" className="link">Search Jobs &gt;&gt;</button>
 							</div>
 						</div>
 					</div>

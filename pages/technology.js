@@ -61,10 +61,11 @@ export default function Technology() {
                 </div>
             </div>
             <div className="cntnt text-center">
-                <p>Time and Materials consulting services. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Our commitment to technological advancement ensures that we understand the critical role technology plays in modern-day staffing solutions. Leveraging our technological expertise can lead to improved efficiency, cost savings, and enhanced decision-making for your organization. </p>
+				<p>Interested in exploring how our solutions can benefit your business, please reach out to us directly to schedule a consultation. </p>
             </div>
             <div className="btn_blk text-center">
-                <Link href="" className="site_btn">Talk to us</Link>
+                <Link href="/contact" className="site_btn">Contact Us</Link>
             </div>
           </div>
           <div className="more_tech_company">

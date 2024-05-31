@@ -21,8 +21,9 @@ export default function Blog() {
                 </div>
                 <div className="colR">
                     <div className="inner">
+						<div className="date">FEBRUARY 20, 2024</div>
                         <div className="sec_heading">
-                            <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+							<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                         </div>
                         <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                         <Link href="/blog/detail">Read More {">>"}</Link>
@@ -37,7 +38,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -49,7 +51,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -61,7 +64,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -73,7 +77,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -85,7 +90,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -97,7 +103,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -109,7 +116,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -121,7 +129,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>
@@ -133,7 +142,8 @@ export default function Blog() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
-                                <h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
+                                <div className="date">FEBRUARY 20, 2024</div>
+								<h2><Link href="/blog/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/blog/detail">Read More {">>"}</Link>
                             </div>

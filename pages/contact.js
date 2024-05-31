@@ -11,6 +11,7 @@ export default function Contact() {
       const options = [
         { value: 'Consulting Services', label: 'Consulting Services' },
         { value: 'Staffing Services', label: 'Staffing Services' },
+        { value: 'Consultants', label: 'Consultants' },
       ];
   return (
     <main>
@@ -25,7 +26,7 @@ export default function Contact() {
                 <div className="sec_heading">
                     <h2>Talk To us</h2>
                 </div>
-                <p>We are eager to hear from you, whether you’re seeking innovative staffing solutions, exploring potential career opportunities, or need customized quality consulting to enhance your growth. Our team is here to assist. </p>
+                <p>We are eager to hear from you, whether you’re seeking innovative staffing solutions, exploring potential career opportunities, or need customized quality consulting to enhance your growth. Our team is here to assist.</p>
 				<p>Please fill out the form below, and one of our team members will reach out, to discuss how we can collaborate to achieve your goals. Your journey towards revolutionizing recruitment with industry-led technological standards starts here. Let’s create impactful connections together! </p>
             </div>
             <div className="form_blk">

@@ -21,7 +21,7 @@ export default function Announcements() {
                         </Link>
                     </div>
                     <div className="colR">
-                        <div className="category">Product</div>
+                        <div className="category">Category: Product <br/>FEBRUARY 20, 2024</div>
                         <h2><Link href="/announcements/detail">Meet NirApad9</Link></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoLorem ipsum </p>
                         <Link href="/announcements/detail">Read More {">>"}</Link>
@@ -34,7 +34,7 @@ export default function Announcements() {
                         </Link>
                     </div>
                     <div className="colR">
-                        <div className="category">Product</div>
+                        <div className="category">Category: Product <br/>FEBRUARY 20, 2024</div>
                         <h2><Link href="/announcements/detail">Meet NirApad9</Link></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoLorem ipsum </p>
                         <Link href="/announcements/detail">Read More {">>"}</Link>
@@ -47,7 +47,7 @@ export default function Announcements() {
                         </Link>
                     </div>
                     <div className="colR">
-                        <div className="category">Product</div>
+                        <div className="category">Category: Product <br/>FEBRUARY 20, 2024</div>
                         <h2><Link href="/announcements/detail">Meet NirApad9</Link></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoLorem ipsum </p>
                         <Link href="/announcements/detail">Read More {">>"}</Link>

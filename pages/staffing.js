@@ -15,9 +15,9 @@ export default function Staffing() {
         <div className="contain">
             <div className="flex">
                 <div className="colL">
-                    <div className="sec_heading">
+                    {/* <div className="sec_heading">
                         <h2>Overview</h2>
-                    </div>
+                    </div> */}
                     <p>In today's dynamic business environment, staffing partners play a pivotal role in bridging the gap between talented individuals seeking employment and organizations in need of skilled personnel. At NirApad9, we take pride in being more than just matchmakers; we&lsquo;re the architects of the future workforce.</p>
 					<p>Our forward-thinking staffing solutions transcend traditional approaches, reflecting our commitment to revolutionizing the industry. Rooted in technology and human-centric methodologies, we don't just match; we architect the future workforce. Our comprehensive services navigate the job market's complexities, ensuring companies discover the right talent while candidates secure their ideal positions.</p>
                 </div>

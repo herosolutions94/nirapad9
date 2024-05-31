@@ -25,6 +25,7 @@ export default function Press() {
                                     <img src="/images/post2.png" alt="" />
                                 </Link>
                                 <div className="txt">
+									<div class="date">FEBRUARY 20, 2024</div>
                                     <h2><Link href="/press/detail">Discover NirApad9's comprehensive service</Link></h2>
                                     <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                     <Link href="/press/detail">Read More {">>"}</Link>
@@ -37,6 +38,7 @@ export default function Press() {
                                     <img src="/images/post2.png" alt="" />
                                 </Link>
                                 <div className="txt">
+									<div class="date">FEBRUARY 20, 2024</div>
                                     <h2><Link href="/press/detail">Discover NirApad9's comprehensive service</Link></h2>
                                     <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                     <Link href="/press/detail">Read More {">>"}</Link>
@@ -57,6 +59,7 @@ export default function Press() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
+								<div class="date">FEBRUARY 20, 2024</div>
                                 <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/press/detail">Read More {">>"}</Link>
@@ -69,6 +72,7 @@ export default function Press() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
+								<div class="date">FEBRUARY 20, 2024</div>
                                 <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/press/detail">Read More {">>"}</Link>
@@ -81,6 +85,7 @@ export default function Press() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
+								<div class="date">FEBRUARY 20, 2024</div>
                                 <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/press/detail">Read More {">>"}</Link>
@@ -93,6 +98,7 @@ export default function Press() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
+								<div class="date">FEBRUARY 20, 2024</div>
                                 <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/press/detail">Read More {">>"}</Link>
@@ -105,6 +111,7 @@ export default function Press() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
+								<div class="date">FEBRUARY 20, 2024</div>
                                 <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/press/detail">Read More {">>"}</Link>
@@ -117,6 +124,7 @@ export default function Press() {
                                 <img src="/images/post2.png" alt="" />
                             </Link>
                             <div className="txt">
+								<div class="date">FEBRUARY 20, 2024</div>
                                 <h2><Link href="/press/detail">Meet NirApad9</Link></h2>
                                 <p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
                                 <Link href="/press/detail">Read More {">>"}</Link>
