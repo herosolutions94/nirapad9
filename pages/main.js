@@ -9,6 +9,7 @@ import Slider from 'react-slick';
 import ReactStars from 'react-stars'
 import Map from "./loader/map";
 import CountUp from 'react-countup';
+import Image from "next/image";
 
 
 export default function MainPage() {
@@ -58,7 +59,7 @@ export default function MainPage() {
               <h1>Transform Staffing</h1>
               <h3>Build Your Dream Team with Skilled Professionals, In-Demand Job Openings, and Solutions that Drive Excellence.</h3>
               <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to an Expert</Link>
+                <Link href="/contact" className="site_btn">Talk to an Expert <Image src="/images/chevron_right_circle.svg" width={100} height={100} alt="" className="chevron_right" /></Link>
               </div>
             </div>
             <div className="colR">
@@ -77,6 +78,7 @@ export default function MainPage() {
                 <h2>Meet NirApad9 – Your Customized Staffing Solution </h2>
               </div>
               <p>Welcome to NirApad9, your gateway to a streamlined talent acquisition journey. Our talent partners are masters at identifying precise skills and revolutionizing the talent discovery landscape. We value your time immensely, meticulously screening candidates to deliver only the finest choices for your company. </p>
+			  <div className="pt-4"></div>
 			  <p>Beyond mere recruitment, our specialty is crafting harmonious matches that benefit organizations and individuals, ensuring sustained prosperity and fulfillment. Let us handle the hiring complexities while you focus on building a dynamic team driving progress and innovation.</p>
               <div className="btn_blk text-center">
                 <Link href="/about" className="site_btn">Get To Know Us </Link>
@@ -94,36 +96,39 @@ export default function MainPage() {
       <section className="services_sec">
         <div className="contain">
             <div className="flex">
-              <div className="col">
-                <div className="inner">
+              <div className="col d-flex">
+                <div className="inner w-100 d-flex flex-column">
                   <div className="sec_heading">
                     <h2>Staffing Services</h2>
                   </div>
                   <p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
+				  <div className="mt-auto"></div>
                   <div className="btn_blk text-center">
-                    <Link href="/staffing" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
+                    <Link href="/staffing" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} className="chevron_right" alt="" /></Link>
                   </div>
                 </div>
               </div>
-              <div className="col">
-                <div className="inner">
+              <div className="col d-flex">
+                <div className="inner w-100 d-flex flex-column">
                   <div className="sec_heading">
                     <h2>Consulting Services </h2>
                   </div>
                   <p>Revolutionize talent management with strategic guidance and innovative solutions.</p>
+				  <div className="mt-auto"></div>
                   <div className="btn_blk text-center">
-                    <Link href="/consulting" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
+                    <Link href="/consulting" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} className="chevron_right" alt="" /></Link>
                   </div>
                 </div>
               </div>
-              <div className="col">
-                <div className="inner">
+              <div className="col d-flex">
+                <div className="inner w-100 d-flex flex-column">
                   <div className="sec_heading">
                     <h2>Talent</h2>
                   </div>
                   <p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
+				  <div className="mt-auto"></div>
                   <div className="btn_blk text-center">
-                    <Link href="/for-talent" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
+                    <Link href="/for-talent" className="site_btn">Read More <img src="/images/chevron_right_circle.svg" width={20} height={20} className="chevron_right" alt="" /></Link>
                   </div>
                 </div>
               </div>
@@ -392,7 +397,7 @@ export default function MainPage() {
           </div>
           <div className="btn_blk">
             <Link href="" className="site_btn">
-              <img src="/images/pencil.svg" alt="" />
+              <img src="/images/edit_circle.svg" alt="" className="chevron_left" />
               <span>Write a Review</span>
             </Link>
           </div>
@@ -409,8 +414,8 @@ export default function MainPage() {
             </div>
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
-              <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="site_btn_img" /></Link>
+              <div className="btn_blk justify-content-center">
+                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
               </div>
             </div>
           </div>

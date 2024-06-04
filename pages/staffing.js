@@ -19,6 +19,7 @@ export default function Staffing() {
                         <h2>Overview</h2>
                     </div> */}
                     <p>In today's dynamic business environment, staffing partners play a pivotal role in bridging the gap between talented individuals seeking employment and organizations in need of skilled personnel. At NirApad9, we take pride in being more than just matchmakers; we&lsquo;re the architects of the future workforce.</p>
+					<div className="pt-4"></div>
 					<p>Our forward-thinking staffing solutions transcend traditional approaches, reflecting our commitment to revolutionizing the industry. Rooted in technology and human-centric methodologies, we don't just match; we architect the future workforce. Our comprehensive services navigate the job market's complexities, ensuring companies discover the right talent while candidates secure their ideal positions.</p>
                 </div>
                 <div className="colR">
@@ -185,37 +186,37 @@ export default function Staffing() {
               <p>We offer innovative staffing solutions blending technology and a human-centric approach. Our model assesses diverse technological skill sets, supported by talent partner networks for precise candidate matching. Continuous engagement ensures adaptability for evolving niche needs. </p>
           </div>
           <div className="flex">
-            <div className="col">
-              <div className="inner">
+            <div className="col d-flex">
+              <div className="inner w-100 d-flex flex-column">
                 <div className="image">
                   <img src="/images/choose1.png" alt="" />
                 </div>
-                <div className="blk_txt">
-                  <h3>Comprehensive Talent Matching</h3>
+                <div className="blk_txt d-flex flex-column flex-grow-1">
+                  <h3 className="mb-auto">Comprehensive Talent Matching</h3>
                   <div className="mini_devide_line"></div>
                   <p>Our algorithms and talent expertise ensure precise candidate matching, saving time and resources in hiring.</p>
                 </div>
               </div>
             </div>
-            <div className="col">
-              <div className="inner">
+            <div className="col d-flex">
+              <div className="inner w-100 d-flex flex-column">
                 <div className="image">
                   <img src="/images/choose2.png" alt="" />
                 </div>
-                <div className="blk_txt">
-                  <h3>Tech-Savvy Solutions</h3>
+                <div className="blk_txt d-flex flex-column flex-grow-1">
+                  <h3 className="mb-auto">Tech-Savvy Solutions</h3>
                   <div className="mini_devide_line"></div>
                   <p>We leverage cutting-edge tech for efficient, industry-tailored solutions, optimizing your workforce.</p>
                 </div>
               </div>
             </div>
-            <div className="col">
-              <div className="inner">
+            <div className="col d-flex">
+              <div className="inner w-100 d-flex flex-column">
                 <div className="image">
                   <img src="/images/choose3.png" alt="" />
                 </div>
-                <div className="blk_txt">
-                  <h3>Proactive Support and Engagement</h3>
+                <div className="blk_txt d-flex flex-column flex-grow-1">
+                  <h3 className="mb-auto">Proactive Support and Engagement</h3>
                   <div className="mini_devide_line"></div>
                   <p>We offer proactive support and ongoing communication for long-term success and satisfaction</p>
                 </div>
@@ -291,8 +292,8 @@ export default function Staffing() {
             </div>
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
-              <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to us</Link>
+              <div className="btn_blk justify-content-center">
+                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
               </div>
             </div>
           </div>

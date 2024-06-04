@@ -216,7 +216,7 @@ export default function Consulting() {
             </div>
         </div>
       </section>
-      <section className="choose_staffing">
+      <section className="choose_staffing choose_staffing_page">
         <div className="contain">
           <div className="devide_line_color"></div>
           <div className="cntnt">
@@ -225,6 +225,7 @@ export default function Consulting() {
               </div>
               {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p> */}
           </div>
+          <div className="wrapper">
           <div className="flex">
             <div className="col">
               <div className="inner">
@@ -262,6 +263,19 @@ export default function Consulting() {
                 </div>
               </div>
             </div>
+            <div className="col">
+              <div className="inner">
+                <div className="image">
+                  <img src="/images/choose3.png" alt="" />
+                </div>
+                <div className="blk_txt">
+                  <h3>Results-Oriented Innovation</h3>
+                  <div className="mini_devide_line"></div>
+                  <p>We focus on delivering measurable outcomes and maintaining competitiveness through innovative, effective strategies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -332,8 +346,8 @@ export default function Consulting() {
             </div>
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
-              <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to us</Link>
+              <div className="btn_blk justify-content-center">
+                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
               </div>
             </div>
           </div>

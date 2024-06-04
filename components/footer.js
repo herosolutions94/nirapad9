@@ -41,9 +41,9 @@ export default function Footer() {
                   <li>
                     <Link href="/consulting">Consulting Services</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/for-talent">For Talent</Link>
-                  </li>
+                  </li> */}
                   
                 </ul>
               </div>
@@ -63,9 +63,9 @@ export default function Footer() {
                   <li>
                     <Link href="/announcements">Announcements</Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link href="">Careers</Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
 
