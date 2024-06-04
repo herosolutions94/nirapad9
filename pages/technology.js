@@ -205,8 +205,8 @@ export default function Technology() {
             </div>
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
-              <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to us</Link>
+              <div className="btn_blk justify-content-center">
+                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
               </div>
             </div>
           </div>

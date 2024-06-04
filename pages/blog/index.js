@@ -11,7 +11,7 @@ export default function Blog() {
             <h1>Blogs</h1>
         </div>
       </section>
-      <section className="blog_pg">
+      <section className="blog_pg main_blog_page">
         <div className="contain">
             <div className="flex">
                 <div className="colL">
@@ -164,8 +164,8 @@ export default function Blog() {
             </div>
             <div className="colR">
               <p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
-              <div className="btn_blk">
-                <Link href="/contact" className="site_btn">Talk to us</Link>
+              <div className="btn_blk justify-content-center">
+                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
               </div>
             </div>
           </div>

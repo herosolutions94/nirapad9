@@ -342,6 +342,16 @@ _btn {
 			&.site_btn_img {
 				height: 2.8rem;
 			}
+			&.chevron_left {
+				height: 3.4rem;
+				margin-left: -2rem;
+				margin-right: 1rem;
+			}
+			&.chevron_right {
+				height: 3.4rem;
+				margin-left: 1rem;
+				margin-right: -2rem;
+			}
         }
         &.f_size_18{
           font-size: 1.8rem;
