@@ -82,12 +82,16 @@ export default function ForTalent() {
 							<div className="text">
 								<h4>Upload Your Resume</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-								<Link href="/upload-cv" className="link">Upload Resume &gt;&gt;</Link>
+								<Link href="/upload-cv" className="link">
+									Upload Resume &gt;&gt;
+								</Link>
 							</div>
 							<div className="text">
 								<h4>Search For Jobs</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-								<button type="button" className="link">Search Jobs &gt;&gt;</button>
+								<button type="button" className="link">
+									Search Jobs &gt;&gt;
+								</button>
 							</div>
 						</div>
 					</div>
@@ -199,8 +203,13 @@ export default function ForTalent() {
 						<div className="colR">
 							<p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
 							<div className="btn_blk justify-content-center">
-                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
-              </div>
+								<Link href="/contact" className="site_btn">
+									<span>Talk to us</span>
+									<span className="arrow">
+										<img src="/images/chevron_right.svg" alt="" />
+									</span>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>

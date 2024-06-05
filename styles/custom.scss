@@ -323,10 +323,10 @@ _btn {
             }
         }
         &:hover {
-            background: $color;
+            background: #000;
             // opacity: 0.8;
             color: $light;
-            border-color: transparent;
+            // border-color: transparent;
         }
         > img {
             // width: 3.8rem;
@@ -353,6 +353,80 @@ _btn {
 				margin-right: -2rem;
 			}
         }
+		>span {
+			& + .arrow {
+				margin-left: 0.5rem;
+				margin-right: -2rem;
+			}
+		}
+		&:hover,
+		&:focus {
+			>.arrow {
+				background: #fff;
+				box-shadow: 0 0 1rem #fff;
+				>img {
+					filter: brightness(0) invert(0);
+				}
+			}
+		}
+		&:focus {
+			>.arrow {
+				// box-shadow: 0 0 1rem #fff, 0 0 1rem #fff;
+				>img {
+					opacity: 0.5;
+				}
+			}
+		}
+		&:not(.write_btn):focus {
+			>.arrow {
+				>img {
+					transform: translateX(1rem);
+				}
+			}
+		}
+		&.write_btn {
+			padding-left: 6rem;
+			> span {
+				@include trans;
+			}
+			>.arrow {
+				position: absolute;
+				margin: 0 !important;
+				left: 1rem;
+			}
+			&:focus {
+				padding-left: 3rem;
+				padding-right: 6rem;
+				>.arrow {
+					left: calc(100% - 4.4rem);
+				}
+			}
+		}
+		> .arrow {
+			position: relative;
+			@include i_flex(center, center);
+			width: 3.4rem;
+			min-width: 3.4rem;
+			height: 3.4rem;
+			border-radius: 75%;
+			@include trans;
+			overflow: hidden;
+			&:nth-child(1) {
+				margin-left: -2rem;
+				margin-right: 0.5rem;
+			}
+			&::before {
+				content: "";
+				@include pos($z: 2);
+				background-image: url('/images/colorful_ellipse.svg');
+				@include bg(contain);
+			}
+			>img {
+				width: 70%;
+				height: 70%;
+				@include trans;
+			}
+		}
         &.f_size_18{
           font-size: 1.8rem;
           @include ipad{
@@ -437,15 +511,31 @@ _btn {
                 @include trans;
             }
             }
+            &:focus,
             &:hover {
-            background: $color;
-            color: $light;
-            border-color: $color;
+				background: rgba($black, 0.4);
+				color: $light;
+				border-color: transparent;
+				&::before {
+					content: '';
+					@include pos(-2px, -2px, -2px, -2px);
+					border: 0.3rem solid transparent;
+					border-radius: inherit;
+					background: linear-gradient(to right, #2DE4A9, #4BBEF8, #B438FF,) border-box;
+					-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+					mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+					-webkit-mask-composite: xor;
+					mask-composite: exclude;
+				}
             img{
               @include trans;
               filter: brightness(0) invert(1);
             }
             }
+			&:focus {
+				background: $black;
+				color: #fff;
+			}
             &.hover_dark{
               &:hover{
                 img{
@@ -3004,6 +3094,23 @@ nav {
         width: 30rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+		&.sub_long {
+			@include flex;
+			width: 60rem;
+			>.left,
+			>.right {
+				flex: auto;
+			}
+			.line {
+				width: 0.1rem;
+				background: rgba($light, 0.3);
+				margin: 0 5rem;
+			}
+			ul {
+				@include list;
+				justify-content: space-between;
+			}
+		}
         
         @include ipad_sm {
           position: static;
@@ -3112,6 +3219,10 @@ nav {
 			-moz-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			-moz-text-fill-color: transparent;
+			&:after {
+				transform: rotate(135deg);
+				margin-top: 4px;
+			}
 		}
         &:after {
           content: "";
@@ -3124,6 +3235,7 @@ nav {
 		  border-left: 1px solid;
 		  border-bottom: 1px solid;
 		  transform: rotate(-45deg);
+		  @include trans;
         }
         
       }

@@ -87,7 +87,12 @@ export default function Contact() {
 							</div>
 							<div className="br"></div>
 							<div className="btn_blk text-center">
-								<button className="site_btn">Submit</button>
+								<button className="site_btn">
+									<span>Submit</span>
+									<span className="arrow">
+										<img src="/images/chevron_right.svg" alt="" />
+									</span>
+								</button>
 							</div>
 						</form>
 					</div>
@@ -105,8 +110,13 @@ export default function Contact() {
 						<div className="colR">
 							<p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
 							<div className="btn_blk justify-content-center">
-                <Link href="/contact" className="site_btn">Talk to us <img src="/images/chevron_right_circle.svg" width={20} height={20} alt="" className="chevron_right" /></Link>
-              </div>
+								<Link href="/contact" className="site_btn">
+									<span>Talk to us</span>
+									<span className="arrow">
+										<img src="/images/chevron_right.svg" alt="" />
+									</span>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>

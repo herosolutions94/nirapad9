@@ -38,7 +38,7 @@ export default function SiteLoader() {
 					</div>
 				</div>
 				{/* <Map /> */}
-                <MainPage />
+				<MainPage />
 			</div>
 		</>
 	)
