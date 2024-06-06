@@ -1,6 +1,7 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function Staffing() {
 	return (
@@ -14,9 +15,6 @@ export default function Staffing() {
 				<div className="contain">
 					<div className="flex">
 						<div className="colL">
-							{/* <div className="sec_heading">
-                        <h2>Overview</h2>
-                    </div> */}
 							<p>In today's dynamic business environment, staffing partners play a pivotal role in bridging the gap between talented individuals seeking employment and organizations in need of skilled personnel. At NirApad9, we take pride in being more than just matchmakers; we&lsquo;re the architects of the future workforce.</p>
 							<div className="pt-4"></div>
 							<p>Our forward-thinking staffing solutions transcend traditional approaches, reflecting our commitment to revolutionizing the industry. Rooted in technology and human-centric methodologies, we don't just match; we architect the future workforce. Our comprehensive services navigate the job market's complexities, ensuring companies discover the right talent while candidates secure their ideal positions.</p>
@@ -32,8 +30,8 @@ export default function Staffing() {
 			<section id="staffing_solutions" style={{ backgroundImage: "url('/images/staffing_solutions_img.jpg')" }}>
 				<div class="devide_line_color"></div>
 				<div className="contain">
-					<div className="sec_heading text-center">
-						<h2>Types of Staffing Solutions We Provide</h2>
+					<div className="text-center">
+						<Heading text="Types of Staffing Solutions We Provide" />
 					</div>
 					<div className="wrapper">
 						<div className="column">
@@ -87,9 +85,7 @@ export default function Staffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Unlocking Your Competitive Edge: Our Key Advantages</h2>
-						</div>
+						<Heading text="Unlocking Your Competitive Edge: Our Key Advantages" />
 						<p>We differentiate ourselves through a unique staffing model that offers unparalleled advantages to employers and job seekers. Our approach transcends traditional staffing services, revolutionizing the recruitment process with the following innovations: </p>
 					</div>
 					<div className="list_advantage">
@@ -127,9 +123,7 @@ export default function Staffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Our Proven Process Delivers Top Talent</h2>
-						</div>
+						<Heading text="Our Proven Process Delivers Top Talent" />
 						<p>The staffing process is meticulously designed to ensure a seamless and dynamic match between our clients and candidates. Here's how we achieve this:</p>
 					</div>
 					<div className="flex">
@@ -187,9 +181,7 @@ export default function Staffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Why NirApad9 is Your Top Choice for Talent Solutions? </h2>
-						</div>
+						<Heading text="Why NirApad9 is Your Top Choice for Talent Solutions?" />
 						<p>We offer innovative staffing solutions blending technology and a human-centric approach. Our model assesses diverse technological skill sets, supported by talent partner networks for precise candidate matching. Continuous engagement ensures adaptability for evolving niche needs. </p>
 					</div>
 					<div className="flex">
@@ -236,9 +228,7 @@ export default function Staffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Our Technologies</h2>
-						</div>
+						<Heading text="Our Technologies" />
 						<p>We streamline the hiring process and ensure the selection of suitable candidates for our clients' business needs. Our Talent Partner Program addresses this challenge by providing comprehensive vetting and assessment services, leveraging expertise in technologies such as below: </p>
 					</div>
 					<div className="flex">

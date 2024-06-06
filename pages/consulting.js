@@ -1,6 +1,7 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function Consulting() {
 	return (
@@ -13,9 +14,6 @@ export default function Consulting() {
 			<section className="consulting_overview">
 				<div className="contain">
 					<div className="cntnt text-center">
-						{/* <div className="sec_heading">
-                    <h2>Overview</h2>
-                </div> */}
 						<p>We are dedicated to solving complex challenges across various industries through our expert consulting services. Our approach combines traditional methodologies with an extensive network of partnerships to deliver customized solutions, tailored to each client's unique needs. Whether you aim to enhance operational efficiency, implement new technologies, or streamline business processes, our team is equipped with the knowledge and expertise to guide you to success.</p>
 						<p>Our services cover a broad-spectrum including risk management, compliance, digital transformation, and specific industry solutions, ensuring a well-rounded approach to address all your business challenges. We specialize in consulting for leading technologies including SAP, Workday, Microsoft, and Zoho, ensuring you receive the most advanced and relevant advice. Our expertise extends to deploying these technologies to address specific issues such as improving supply chain logistics, enhancing customer relationship management, and boosting data security. </p>
 					</div>
@@ -26,9 +24,7 @@ export default function Consulting() {
 				<div className="contain">
 					<div className="flex">
 						<div className="colL">
-							<div className="sec_heading">
-								<h2>Our Consulting Services </h2>
-							</div>
+							<Heading text="Our Consulting Services" />
 							<p>NirApad9 can tackle complex challenges across industries with expert consulting services, combining traditional methods and extensive partnerships to provide customized solutions. Our team's expertise spans operational efficiency, technology implementation, and process streamlining. </p>
 							{/* <div className="btn_blk">
                 <Link href="" className="site_btn">Learn More</Link>
@@ -45,8 +41,8 @@ export default function Consulting() {
 			<section id="staffing_solutions" style={{ backgroundImage: "url('/images/staffing_solutions_img.jpg')" }}>
 				<div class="devide_line_color"></div>
 				<div className="contain">
-					<div className="sec_heading text-center">
-						<h2>Types of Staffing Solutions We Provide</h2>
+					<div className="text-center">
+						<Heading text="Types of Staffing Solutions We Provide" />
 					</div>
 					<div className="wrapper">
 						<div className="column">
@@ -97,82 +93,80 @@ export default function Consulting() {
 				</div>
 			</section>
 			{/* <section className="feature_consulting_sec">
-        <div className="contain">
-            <div className="devide_line_color"></div>
-            <div className="sec_heading text-center">
-                <h2>Features</h2>
-            </div>
-            <div className="flex">
-                <div className="col">
-                    <div className="inner">
-                        <div className="icon_img">
-                            <img src="/images/f1.svg" alt="" />
-                        </div>
-                        <div className="txt">
-                            <h3>Feature 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <Link href="">Read More {">>"}</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="inner">
-                        <div className="icon_img">
-                            <img src="/images/f2.svg" alt="" />
-                        </div>
-                        <div className="txt">
-                            <h3>Feature 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <Link href="">Read More {">>"}</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="inner">
-                        <div className="icon_img">
-                            <img src="/images/f3.svg" alt="" />
-                        </div>
-                        <div className="txt">
-                            <h3>Feature 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <Link href="">Read More {">>"}</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="inner">
-                        <div className="icon_img">
-                            <img src="/images/f4.svg" alt="" />
-                        </div>
-                        <div className="txt">
-                            <h3>Feature 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <Link href="">Read More {">>"}</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="inner">
-                        <div className="icon_img">
-                            <img src="/images/f5.svg" alt="" />
-                        </div>
-                        <div className="txt">
-                            <h3>Feature 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                            <Link href="">Read More {">>"}</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section> */}
+				<div className="contain">
+					<div className="devide_line_color"></div>
+					<div className="text-center">
+						<Heading text="Features" />
+					</div>
+					<div className="flex">
+						<div className="col">
+							<div className="inner">
+								<div className="icon_img">
+									<img src="/images/f1.svg" alt="" />
+								</div>
+								<div className="txt">
+									<h3>Feature 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									<Link href="">Read More {">>"}</Link>
+								</div>
+							</div>
+						</div>
+						<div className="col">
+							<div className="inner">
+								<div className="icon_img">
+									<img src="/images/f2.svg" alt="" />
+								</div>
+								<div className="txt">
+									<h3>Feature 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									<Link href="">Read More {">>"}</Link>
+								</div>
+							</div>
+						</div>
+						<div className="col">
+							<div className="inner">
+								<div className="icon_img">
+									<img src="/images/f3.svg" alt="" />
+								</div>
+								<div className="txt">
+									<h3>Feature 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									<Link href="">Read More {">>"}</Link>
+								</div>
+							</div>
+						</div>
+						<div className="col">
+							<div className="inner">
+								<div className="icon_img">
+									<img src="/images/f4.svg" alt="" />
+								</div>
+								<div className="txt">
+									<h3>Feature 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									<Link href="">Read More {">>"}</Link>
+								</div>
+							</div>
+						</div>
+						<div className="col">
+							<div className="inner">
+								<div className="icon_img">
+									<img src="/images/f5.svg" alt="" />
+								</div>
+								<div className="txt">
+									<h3>Feature 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+									<Link href="">Read More {">>"}</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> */}
 			<section className="advantages_staffing_sec">
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Unlocking Your Competitive Edge: Our Key Advantages</h2>
-						</div>
+						<Heading text="Unlocking Your Competitive Edge: Our Key Advantages" />
 						<p>We differentiate ourselves through a unique consulting model that offers unparalleled advantages to businesses and stakeholders. Our approach transcends traditional consulting services, revolutionizing business strategy and operations with the following innovations: </p>
 					</div>
 					<div className="list_advantage">
@@ -219,8 +213,8 @@ export default function Consulting() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt">
-						<div className="sec_heading text-center">
-							<h2>Why NirApad9 is Your Top Choice for Consulting Solutions? </h2>
+						<div className="text-center">
+							<Heading text="Why NirApad9 is Your Top Choice for Consulting Solutions?" />
 						</div>
 						{/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p> */}
 					</div>
@@ -282,9 +276,7 @@ export default function Consulting() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Our Technologies</h2>
-						</div>
+						<Heading text="Our Technologies" />
 						<p>We optimize business processes and ensure alignment with our clients' strategic objectives. Our Consulting services addresses challenges by providing comprehensive evaluation and implementation services, leveraging expertise in technologies such as below: </p>
 					</div>
 					<div className="flex">

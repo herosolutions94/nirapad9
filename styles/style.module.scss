@@ -753,11 +753,6 @@
 				@include object;
 			}
 		}
-		/* .sec_heading{
-            h2{
-                font-family: "interBold";
-            }
-        } */
 		p {
 			font-size: 1.8rem;
 			font-family: "inter";
@@ -820,11 +815,6 @@
 				@include object;
 			}
 		}
-		/* .sec_heading{
-            h2{
-                font-family: "interBold";
-            }
-        } */
 		p {
 			font-size: 1.8rem;
 			font-family: "inter";
@@ -834,11 +824,6 @@
 
 // =========team=======
 .team_sec {
-	.sec_heading {
-		h2 {
-			font-family: "interBold";
-		}
-	}
 	.devide_line_color {
 		margin: 1rem 0 3rem;
 	}
@@ -1814,16 +1799,6 @@
 				@include mobile_sm {
 					padding: 2rem;
 				}
-				.sec_heading {
-					margin-bottom: 2rem;
-					h2 {
-						overflow: hidden;
-						text-overflow: ellipsis;
-						display: -webkit-box;
-						-webkit-line-clamp: 2;
-						-webkit-box-orient: vertical;
-					}
-				}
 				.date {
 					font-family: "sub-heading-font";
 					font-size: 1.6rem;
@@ -2133,9 +2108,6 @@
 	.cntnt {
 		max-width: 70rem;
 		margin: 0 auto;
-		.sec_heading {
-			text-align: center;
-		}
 	}
 	.form_blk {
 		max-width: 90rem;
@@ -2201,23 +2173,9 @@
 		.cntnt {
 			max-width: 50rem;
 			margin: 0 auto;
-			.sec_heading {
-				h1 {
-					font-size: 5.8rem;
-					font-family: "interBlack";
-					color: $light;
-					@include mobile {
-						font-size: 4rem;
-					}
-					@include mobile_sm {
-						font-size: 3.5rem;
-					}
-				}
-				margin-bottom: 4rem;
-			}
-			h2 {
+			h3 {
 				font-family: "interBold";
-				font-size: 2.6rem;
+				font-size: 2.2rem;
 				margin-bottom: 3rem;
 				color: $light;
 				@include mobile_sm {
@@ -2370,32 +2328,38 @@
 
 button {
 	&.go_back {
-		@include pos($pos: fixed, $b: 4rem, $r: 4rem, $l: null, $t: null);
+		@include pos($pos: fixed, $b: 4rem, $r: 4rem, $l: null, $t: null, $z: 99);
 		width: 5rem;
 		height: 5rem;
 		@include radius(50px);
-		overflow: hidden;
-		padding: 0.7rem;
+		// overflow: hidden;
+		padding: 1.4rem;
 		background: linear-gradient(to right, #ffdaeb, #fdd1c1, #fcf6bd, #d0f4de, #a9def9, #e4c1f9);
-		border: none;
+		border: 1px solid;
 		box-shadow: $shadow2;
 		opacity: 0;
 		visibility: hidden;
 		@include trans;
-
+		&::before {
+			content: "";
+			@include pos(-0.4rem, -0.4rem, -0.4rem, -0.4rem);
+			border: 1px solid;
+			border-radius: inherit;
+		}
 		&.show {
 			opacity: 1;
 			visibility: visible;
-			@include trans;
 		}
 		&.hide {
 			opacity: 0;
 			visibility: hidden;
-			@include trans;
 		}
 		&:hover {
-			@include trans;
+			background: #000;
 			opacity: 0.7;
+			img {
+				filter: brightness(0) invert(1);
+			}
 		}
 		img {
 			@include object(contain);

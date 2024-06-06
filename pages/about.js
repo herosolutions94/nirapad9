@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import ReactStars from "react-stars"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function About() {
 	const [activeTab, setActiveTab] = useState(0)
@@ -55,9 +56,7 @@ export default function About() {
 						</div>
 						<div className="col w-100">
 							<div className="cntnt text-center">
-								<div className="sec_heading">
-									<h2>Cultivating Company Culture for Growth, Collaboration, and Innovation</h2>
-								</div>
+								<Heading text="Cultivating Company Culture for Growth, Collaboration, and Innovation" />
 								<p>Central to NirApad9 are our core values of growth, opportunity, collaboration, and ownership, which drive our operations and relationships. We foster an environment where employees are encouraged to excel across various domains, such as technical expertise, adaptability, teamwork, and proactive engagement, recognizing the importance of versatility and continuous learning for professional development. By embodying these values, we elevate employee careers and provide clients with the highest caliber of innovative, technology-driven, and human-centric solutions.</p>
 							</div>
 						</div>
@@ -73,9 +72,7 @@ export default function About() {
 							</div>
 						</div>
 						<div className="colR">
-							<div className="sec_heading">
-								<h2>Our Mission</h2>
-							</div>
+							<Heading text="Our Mission" />
 							<p>We foster collective and organic growth through a dynamic approach to staffing and technology. Our ethos is grounded in the belief that our employees and the company's progress are interlinked. Together, we're committed to rising by achieving excellence in a changing landscape. </p>
 						</div>
 					</div>
@@ -85,9 +82,7 @@ export default function About() {
 				<div className="contain">
 					<div className="flex">
 						<div className="colL">
-							<div className="sec_heading">
-								<h2>Our Vision</h2>
-							</div>
+							<Heading text="Our Vision" />
 							<p>We aim to revolutionize staffing efficiency by reducing candidate processing time from 7 – 10 days to 4 hours within the next two years. Leveraging cutting-edge technology and human capital strategies, we're committed to multifaceted operational improvements and enhanced talent partner relations to achieve this ambitious goal. We envision ourselves at the forefront of the industry, setting new standards for efficiency and excellence.</p>
 						</div>
 						<div className="colR">
@@ -100,8 +95,8 @@ export default function About() {
 			</section>
 			<section className="team_sec">
 				<div className="contain-fluid">
-					<div className="sec_heading text-center">
-						<h2>Meet our Team</h2>
+					<div className="text-center">
+						<Heading text="Meet our Team" />
 					</div>
 					<div className="tabs_btn">
 						<button className={activeTab === 0 ? "active" : " "} onClick={() => setActiveTab(0)}>
@@ -542,9 +537,7 @@ export default function About() {
 			</section>
 			<section className="testimonial_sec">
 				<div className="contain">
-					<div className="sec_heading">
-						<h2>Hear What Our Clients Have to Say</h2>
-					</div>
+					<Heading text="Hear What Our Clients Have to Say" />
 				</div>
 				<div className="slider_testi">
 					<Slider {...testi}>

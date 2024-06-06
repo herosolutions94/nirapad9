@@ -1,3 +1,4 @@
+import Heading from "@/components/components/heading"
 import TalkToUs from "@/components/components/talk-to-us"
 import Link from "next/link"
 import React, { useState } from "react"
@@ -13,8 +14,8 @@ export default function Press() {
 			<section className="blog_pg">
 				<div className="contain">
 					<div className="feature_press">
-						<div className="sec_heading text-center">
-							<h2>Featured Press</h2>
+						<div className="text-center">
+							<Heading text="Featured Press" />
 						</div>
 						<div className="feature_flex_press">
 							<div className="flex">
@@ -52,8 +53,8 @@ export default function Press() {
 						</div>
 					</div>
 					<div className="other_blog">
-						<div className="sec_heading text-center">
-							<h2>All Press</h2>
+						<div className="text-center">
+							<Heading text="All Press" />
 						</div>
 						<div className="flex">
 							<div className="col">

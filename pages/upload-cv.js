@@ -2,6 +2,7 @@ import Link from "next/link"
 import React, { useState } from "react"
 import Dropdown from "../components/custom-drop"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function Contact() {
 	const handleSelect = (option) => {
@@ -22,9 +23,7 @@ export default function Contact() {
 			<section className="contact_area for_talent_upload">
 				<div className="contain">
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>We’re excited to build this relationship with you.</h2>
-						</div>
+						<Heading text="We’re excited to build this relationship with you." />
 						<p>Share your information below and one of our recruiters will reach out to you shortly!</p>
 					</div>
 					<div className="form_blk">
