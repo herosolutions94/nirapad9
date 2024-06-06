@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import ReactStars from "react-stars"
+import TalkToUs from "../components/talk-to-us"
 
 export default function About() {
 	const [activeTab, setActiveTab] = useState(0)
@@ -63,7 +64,7 @@ export default function About() {
 					</div>
 				</div>
 			</section>
-			<section className="mission_sec">
+			<section className="mission_sec mission_about_page">
 				<div className="contain">
 					<div className="flex">
 						<div className="colL">
@@ -80,7 +81,7 @@ export default function About() {
 					</div>
 				</div>
 			</section>
-			<section className="vision_sec">
+			<section className="vision_sec vision_about_page">
 				<div className="contain">
 					<div className="flex">
 						<div className="colL">
@@ -590,28 +591,7 @@ export default function About() {
 					</Slider>
 				</div>
 			</section>
-			<section className="cta_sec about_page_sec">
-				<div className="contain">
-					<div className="flex">
-						<div className="colL">
-							<div className="image">
-								<img src="/images/cta.svg" alt="" />
-							</div>
-						</div>
-						<div className="colR">
-							<p>Ready to elevate your workforce? Contact us today for personalized staffing solutions tailored to your company's needs. Let's collaborate to find the perfect talent that drives your success. </p>
-							<div className="btn_blk justify-content-center">
-								<Link href="/contact" className="site_btn">
-									<span>Talk to us</span>
-									<span className="arrow">
-										<img src="/images/chevron_right.svg" alt="" />
-									</span>
-								</Link>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<TalkToUs />
 		</main>
 	)
 }
