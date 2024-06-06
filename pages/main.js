@@ -11,6 +11,7 @@ import Map from "./loader/map"
 import CountUp from "react-countup"
 import Image from "next/image"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function MainPage() {
 	// const element = <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />
@@ -78,9 +79,7 @@ export default function MainPage() {
 			<section className="after_banner">
 				<div className="contain">
 					<div className="center_text_blk">
-						<div className="sec_heading">
-							<h2>Meet NirApad9 – Your Customized Staffing Solution </h2>
-						</div>
+						<Heading text="Meet NirApad9 – Your Customized Staffing Solution" />
 						<p>Welcome to NirApad9, your gateway to a streamlined talent acquisition journey. Our talent partners are masters at identifying precise skills and revolutionizing the talent discovery landscape. We value your time immensely, meticulously screening candidates to deliver only the finest choices for your company. </p>
 						<div className="pt-4"></div>
 						<p>Beyond mere recruitment, our specialty is crafting harmonious matches that benefit organizations and individuals, ensuring sustained prosperity and fulfillment. Let us handle the hiring complexities while you focus on building a dynamic team driving progress and innovation.</p>
@@ -95,9 +94,7 @@ export default function MainPage() {
 					</div>
 					<div className="devide_line_color"></div>
 					<div className="center_text_blk">
-						<div className="sec_heading">
-							<h2>Comprehensive Services for Your Success</h2>
-						</div>
+						<Heading text="Comprehensive Services for Your Success" />
 						<p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, while our consulting services revolutionize talent management, offering strategic guidance and innovative solutions for workforce optimization and growth. Partner with us for expert support in finding candidates and enhancing talent strategies.</p>
 					</div>
 				</div>
@@ -107,9 +104,7 @@ export default function MainPage() {
 					<div className="flex">
 						<div className="col d-flex">
 							<div className="inner w-100 d-flex flex-column">
-								<div className="sec_heading">
-									<h2>Staffing Services</h2>
-								</div>
+								<Heading text="Staffing Services" />
 								<p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
 								<div className="mt-auto"></div>
 								<div className="btn_blk text-center">
@@ -124,9 +119,7 @@ export default function MainPage() {
 						</div>
 						<div className="col d-flex">
 							<div className="inner w-100 d-flex flex-column">
-								<div className="sec_heading">
-									<h2>Consulting Services </h2>
-								</div>
+								<Heading text="Consulting Services" />
 								<p>Revolutionize talent management with strategic guidance and innovative solutions.</p>
 								<div className="mt-auto"></div>
 								<div className="btn_blk text-center">
@@ -141,9 +134,7 @@ export default function MainPage() {
 						</div>
 						<div className="col d-flex">
 							<div className="inner w-100 d-flex flex-column">
-								<div className="sec_heading">
-									<h2>Talent</h2>
-								</div>
+								<Heading text="Talent" />
 								<p>Connect with top-tier skilled professionals tailored for your company's needs.</p>
 								<div className="mt-auto"></div>
 								<div className="btn_blk text-center">
@@ -163,9 +154,7 @@ export default function MainPage() {
 				<div className="contain">
 					<div className="flex">
 						<div className="colL">
-							<div className="sec_heading">
-								<h2>Addressing Staffing Challenges Across Various Industries </h2>
-							</div>
+							<Heading text="Addressing Staffing Challenges Across Various Industries" />
 							<p>Our tailored solutions and expertise span across various sectors, ensuring that we can meet the unique needs of each industry and drive success for our clients. </p>
 						</div>
 						<div className="colR">
@@ -222,9 +211,7 @@ export default function MainPage() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt">
-						<div className="sec_heading">
-							<h2>Proven Success Rate</h2>
-						</div>
+						<Heading text="Proven Success Rate" />
 						<p>Experience our proven success: delivering results, exceeding expectations, and driving your success. </p>
 					</div>
 					<div className="flex">
@@ -278,9 +265,7 @@ export default function MainPage() {
 			</section>
 			<section className="testimonial_sec">
 				<div className="contain">
-					<div className="sec_heading">
-						<h2>Hear What Our Clients Have to Say</h2>
-					</div>
+					<Heading text="Hear What Our Clients Have to Say" />
 				</div>
 				<div className="slider_testi">
 					<Slider {...testi}>
@@ -329,9 +314,7 @@ export default function MainPage() {
 			</section>
 			<section className="spotlight_sec">
 				<div className="contain">
-					<div className="sec_heading">
-						<h2>Customer Spotlight : Share Your Reviews With Us!</h2>
-					</div>
+					<Heading text="Customer Spotlight : Share Your Reviews With Us!" />
 					<div className="flex">
 						<div className="col">
 							<div className="inner">

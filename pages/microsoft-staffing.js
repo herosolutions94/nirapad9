@@ -1,6 +1,7 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function MicrosoftStaffing() {
 	return (
@@ -13,9 +14,7 @@ export default function MicrosoftStaffing() {
 			<section className="consulting_overview micro-overview">
 				<div className="contain">
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Overview</h2>
-						</div>
+						<Heading text="Overview" />
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Et malesuada fames ac turpis egestas. Duis tristique sollicitudin nibh sit. Vulputate dignissim </p>
 					</div>
 					<div className="flex">
@@ -44,9 +43,7 @@ export default function MicrosoftStaffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Advantages of Our Microsoft Staffing </h2>
-						</div>
+						<Heading text="Advantages of Our Microsoft Staffing" />
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Et malesuada fames ac turpis egestas. Duis tristique sollicitudin nibh sit. Vulputate dignissim </p>
 					</div>
 					<div className="list_advantage">
@@ -84,9 +81,7 @@ export default function MicrosoftStaffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Why Choose us for Staffing</h2>
-						</div>
+						<Heading text="Why Choose us for Staffing" />
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Urna nunc id cursus metus aliquam eleifend mi in. Eu facilisis sed odio morbi quis commodo odio aenean sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. </p>
 					</div>
 					<div className="flex">
@@ -133,9 +128,7 @@ export default function MicrosoftStaffing() {
 				<div className="contain">
 					<div className="devide_line_color"></div>
 					<div className="cntnt text-center">
-						<div className="sec_heading">
-							<h2>Proven Success Rate for Microsoft Staffing</h2>
-						</div>
+						<Heading text="Proven Success Rate for Microsoft Staffing" />
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Et malesuada fames ac turpis egestas. Duis tristique sollicitudin nibh sit. Vulputate dignissim suspendisse in est ante in nibh. Donec enim diam.</p>
 					</div>
 					<div className="flex proven_success_rate">

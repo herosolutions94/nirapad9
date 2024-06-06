@@ -5,6 +5,7 @@ import ReactStars from "react-stars"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import TalkToUs from "../components/talk-to-us"
+import Heading from "../components/heading"
 
 export default function ForTalent() {
 	const testi = {
@@ -40,8 +41,8 @@ export default function ForTalent() {
 				<div className="contain">
 					<div className="row justify-content-center">
 						<div className="col-lg-10">
-							<div className="sec_heading text-center">
-								<h2>Advantages</h2>
+							<div className="text-center">
+								<Heading text="Advantages" />
 							</div>
 							<p>We provide cutting-edge staffing solutions tailored to meet our clients' unique needs. Our team of experts possesses a deep understanding of the industry and is committed to delivering value through innovative and effective strategies. We pride ourselves on staying up-to-date with the latest trends and technologies to ensure our clients receive the most relevant and comprehensive solutions</p>
 						</div>
@@ -77,9 +78,7 @@ export default function ForTalent() {
 							<img src="/images/Technology-and-Experience-at-Your-Side.png" alt="" />
 						</div>
 						<div className="content">
-							<div class="sec_heading">
-								<h2>Technology and Experience at Your Side</h2>
-							</div>
+							<Heading text="Technology and Experience at Your Side" />
 							<div className="text">
 								<h4>Upload Your Resume</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
@@ -100,9 +99,7 @@ export default function ForTalent() {
 			</section>
 			<section className="testimonial_sec for_talent_testimonial">
 				<div className="contain">
-					<div className="sec_heading">
-						<h2>Hear What Our Clients Have to Say</h2>
-					</div>
+					<Heading text="Hear What Our Clients Have to Say" />
 					<div className="slider_testi">
 						<Slider {...testi}>
 							<div className="item">
@@ -153,8 +150,8 @@ export default function ForTalent() {
 				<div className="contain">
 					<div className="row justify-content-center">
 						<div className="col-lg-11">
-							<div className="sec_heading text-center">
-								<h2>Articles & Resources</h2>
+							<div className="text-center">
+								<Heading text="Articles & Resources" />
 							</div>
 							<div className="wrapper">
 								<div className="column">

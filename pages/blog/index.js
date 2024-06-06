@@ -1,3 +1,4 @@
+import Heading from "@/components/components/heading"
 import TalkToUs from "@/components/components/talk-to-us"
 import Link from "next/link"
 import React, { useState } from "react"
@@ -21,11 +22,7 @@ export default function Blog() {
 						<div className="colR">
 							<div className="inner">
 								<div className="date">FEBRUARY 20, 2024</div>
-								<div className="sec_heading">
-									<h2>
-										<Link href="/blog/detail">Meet NirApad9</Link>
-									</h2>
-								</div>
+								<Heading text="Meet NirApad9" link="/blog/detail" />
 								<p>Discover NirApad9's comprehensive services, bridging staffing and consulting seamlessly. Our staffing solutions connect you with top-tier talent, whiler </p>
 								<Link href="/blog/detail">Read More {">>"}</Link>
 							</div>
