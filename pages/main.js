@@ -55,16 +55,18 @@ export default function MainPage() {
 				<div className="contain-fluid">
 					<div className="flex">
 						<div className="colL">
-							<h3>Personalized Solutions Guided by Talent Experts</h3>
-							<h1>Transform Staffing</h1>
-							<h3>Build Your Dream Team with Skilled Professionals, In-Demand Job Openings, and Solutions that Drive Excellence.</h3>
-							<div className="btn_blk">
-								<Link href="/contact" className="site_btn">
-									<span>Talk to an Expert</span>
-									<span className="arrow">
-										<img src="/images/chevron_right.svg" alt="" />
-									</span>
-								</Link>
+							<div className="text">
+								<h3>Personalized Solutions Guided by Talent Experts</h3>
+								<h1>Transform Staffing</h1>
+								<h3>Build Your Dream Team with Skilled Professionals, In-Demand Job Openings, and Solutions that Drive Excellence.</h3>
+								<div className="btn_blk">
+									<Link href="/contact" className="site_btn">
+										<span>Talk to an Expert</span>
+										<span className="arrow">
+											<img src="/images/chevron_right.svg" alt="" />
+										</span>
+									</Link>
+								</div>
 							</div>
 						</div>
 						<div className="colR">
