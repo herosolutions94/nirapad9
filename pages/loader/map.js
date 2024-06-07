@@ -4,7 +4,7 @@ import style from "/styles/loader.module.scss"
 export default function Map() {
 	return (
 		<>
-			<div className={style.map_wrapper}>
+			<div className={`${style.map_wrapper} map_wrapper`}>
 				<div id={style.map}>
 					<img src="/images/map.png" alt="" />
 					<div className={style.inside}>
