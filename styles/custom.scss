@@ -19,7 +19,7 @@ body {
 	font-family: "pera-font";
 	margin: 0;
 	padding: 0;
-	line-height: 1.3;
+	line-height: 1.4;
 	word-break: break-word;
 	letter-spacing: 0.2px;
 	@include trans;
@@ -310,10 +310,10 @@ h4 {
 	outline: none !important;
 	@include trans;
 	min-width: 12rem;
-	@include mobile_sm {
+	/* @include mobile_sm {
 		width: 100%;
 		min-width: 100%;
-	}
+	} */
 	@include mobile_sm {
 		&.block_sm {
 			width: 100%;
@@ -605,7 +605,7 @@ h4 {
 	label {
 		-ms-flex-item-align: center;
 		align-self: center;
-		line-height: 1.5;
+		line-height: 1.4;
 		cursor: pointer;
 		color: $dark_gray;
 		margin: 0 0 0 1rem;
@@ -2548,8 +2548,10 @@ header {
 		}
 	}
 	.toggle {
-		// @include flex;
 		z-index: 32;
+		&.active {
+			top: -30px;
+		}
 		@include ipad_sm {
 		}
 	}
@@ -2719,8 +2721,8 @@ header {
 		@include ipad {
 			// float: none;
 			// margin: auto;
-			height: 6rem;
-			max-width: 8rem;
+			// height: 6rem;
+			// max-width: 8rem;
 		}
 	}
 	.session_header & {
@@ -2836,13 +2838,14 @@ nav {
 	@include trans;
 	@include ipad_sm {
 		@include pos($pos: fixed, $t: 8rem);
-		@include flex($flow: wrap);
+		display: block;
+		/* @include flex($flow: wrap);
 		-ms-flex-line-pack: justify;
-		align-content: space-between;
+		align-content: space-between; */
 		width: 100%;
 		background: $light;
 		margin: 0;
-		padding: 1rem;
+		padding: 3rem;
 		border-top: 0.2rem solid rgba($black, 0.1);
 		opacity: 0;
 		visibility: hidden;
@@ -2957,9 +2960,19 @@ nav {
 				width: 30rem;
 				border-top-left-radius: 0;
 				border-top-right-radius: 0;
+				ul.flex {
+					display: block;
+					> li:not(:nth-last-child(1)) {
+						margin-bottom: 2rem;
+					}
+				}
 				&.sub_long {
 					@include flex;
 					width: 60rem;
+					@include ipad_sm {
+						display: none;
+						width: 100%;
+					}
 					> .left,
 					> .right {
 						flex: auto;
@@ -2968,13 +2981,24 @@ nav {
 						width: 0.1rem;
 						background: rgba($light, 0.3);
 						margin: 0 5rem;
+						@include ipad_sm {
+							width: 100%;
+							height: 0.1rem;
+							background: rgba($black, 0.1);
+							margin: 2rem 0;
+						}
+					}
+					h4 {
+						color: #fff;
+						@include ipad_sm {
+							color: #000;
+						}
 					}
 					ul {
 						@include list;
 						justify-content: space-between;
 					}
 				}
-
 				@include ipad_sm {
 					position: static;
 					display: none;
@@ -3029,6 +3053,7 @@ nav {
 						@include ipad_sm {
 							@include i_flex;
 							color: $black;
+							padding: 0.5rem 0;
 						}
 						&:hover {
 							color: $color;

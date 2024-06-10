@@ -46,7 +46,7 @@ export default function Header({ data }) {
 							<div className="drop_btn">Services</div>
 							<div className={`sub sub_long ${services && active}`}>
 								<div className="left">
-									<h4 className="text-white pb-4">FOR EMPLOYERS</h4>
+									<h4 className="pb-4">FOR EMPLOYERS</h4>
 									<ul className="flex">
 										<li>
 											<ul>
@@ -120,7 +120,7 @@ export default function Header({ data }) {
 								</div>
 								<div className="line"></div>
 								<div className="right">
-									<h4 className="text-white pb-4">FOR TALENT</h4>
+									<h4 className="pb-4">FOR TALENT</h4>
 									<ul className="flex">
 										<li>
 											<ul>
