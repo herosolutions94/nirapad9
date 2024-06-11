@@ -68,9 +68,9 @@ export default function Contact() {
 										<label>Services</label>
 										<div className="input_outer">
 											{/* <select className="input">
-                                    <option>Consulting Services</option>
-                                    <option>Staffing Services</option>
-                                </select> */}
+												<option>Consulting Services</option>
+												<option>Staffing Services</option>
+											</select> */}
 											<Dropdown options={options} onSelect={handleSelect} defaultLabel="" />
 										</div>
 									</div>
@@ -92,10 +92,10 @@ export default function Contact() {
 							</div>
 							<div className="br"></div>
 							<div className="btn_blk text-center">
-								<button className="site_btn">
+								<button className="site_btn submit_btn">
 									<span>Submit</span>
-									<span className="arrow">
-										<img src="/images/chevron_right.svg" alt="" />
+									<span className="check">
+										<img src="/images/check.svg" alt="" />
 									</span>
 								</button>
 							</div>

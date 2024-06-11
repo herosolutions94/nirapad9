@@ -87,7 +87,7 @@ export default function Contact() {
 							</div>
 							<div className="br"></div>
 							<div className="btn_blk text-center">
-								<button className="site_btn">
+								<button className="site_btn submit_btn">
 									<span>Submit</span>
 									<span className="arrow">
 										<img src="/images/chevron_right.svg" alt="" />

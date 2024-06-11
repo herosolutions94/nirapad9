@@ -369,7 +369,31 @@ h4 {
 	&:not(.write_btn):hover {
 		> .arrow {
 			> img {
-				animation: slide 2s infinite 0.5s;
+				animation: slide 1s infinite 0.5s;
+			}
+		}
+	}
+	&.submit_btn {
+		&:focus,
+		&:hover {
+			background: $black;
+			color: $light;
+			border-color: transparent;
+			animation: dark_to_light 2s -1s;
+			&::before {
+				content: "";
+				@include pos(-2px, -2px, -2px, -2px);
+				border: 0.3rem solid transparent;
+				border-radius: inherit;
+				background: linear-gradient(to right, #2de4a9, #4bbef8, #b438ff) border-box;
+				-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+				mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+				-webkit-mask-composite: xor;
+				mask-composite: exclude;
+			}
+			>.check {
+				opacity: 1;
+				animation: opacity 2s -1s;
 			}
 		}
 	}
@@ -390,6 +414,15 @@ h4 {
 				left: calc(100% - 4rem);
 			}
 		}
+	}
+	> .check {
+		position: relative;
+		width: 4rem;
+		min-width: 4rem;
+		height: 4rem;
+		margin-right: -5rem;
+		opacity: 0;
+		@include trans;
 	}
 	> .arrow {
 		position: relative;
@@ -543,7 +576,7 @@ h4 {
 			opacity: 1;
 		}
 		100% {
-			transform: translateX(1rem);
+			transform: translateX(1.4rem);
 			opacity: 0.5;
 		}
 	}
@@ -555,6 +588,14 @@ h4 {
 			background: $black;
 		}
 	}
+	@keyframes dark_to_light {
+		0% {
+			background: $black;
+		}
+		100% {
+			background: rgba($black, 0.4);
+		}
+	}
 	@keyframes left_to_right {
 		0% {
 			transform: translateX(0);
@@ -563,6 +604,14 @@ h4 {
 		100% {
 			transform: translateX(1rem);
 			opacity: 0.5;
+		}
+	}
+	@keyframes opacity {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
 		}
 	}
 }
@@ -2960,10 +3009,12 @@ nav {
 				width: 30rem;
 				border-top-left-radius: 0;
 				border-top-right-radius: 0;
-				ul.flex {
-					display: block;
-					> li:not(:nth-last-child(1)) {
-						margin-bottom: 2rem;
+				@include ipad_sm {
+					ul.flex {
+						display: block;
+						> li:not(:nth-last-child(1)) {
+							margin-bottom: 2rem;
+						}
 					}
 				}
 				&.sub_long {
