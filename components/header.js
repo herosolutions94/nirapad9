@@ -76,7 +76,7 @@ export default function Header({ data }) {
 													</Link>
 												</li>
 												<li>
-													<Link href="/" onClick={closeDropdown}>
+													<Link href="/technology" onClick={closeDropdown}>
 														More&gt;&gt;
 													</Link>
 												</li>
@@ -110,7 +110,7 @@ export default function Header({ data }) {
 													</Link>
 												</li>
 												<li>
-													<Link href="/" onClick={closeDropdown}>
+													<Link href="/technology" onClick={closeDropdown}>
 														More&gt;&gt;
 													</Link>
 												</li>
@@ -125,13 +125,13 @@ export default function Header({ data }) {
 										<li>
 											<ul>
 												<li>
-													<Link href="/find-jobs" onClick={closeDropdown}>
-														Find Jobs
+													<Link href="/open-jobs" onClick={closeDropdown}>
+													Open Jobs
 													</Link>
 												</li>
 												<li>
-													<Link href="/upload-cv" onClick={closeDropdown}>
-														Upload Resume
+													<Link href="/" onClick={closeDropdown}>
+														Become a Talent
 													</Link>
 												</li>
 											</ul>

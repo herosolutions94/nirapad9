@@ -8,15 +8,43 @@ import TalkToUs from "../components/talk-to-us"
 import Heading from "../components/heading"
 
 export default function ForTalent() {
+	// const testi = {
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	speed: 1500,
+	// 	infinite: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 10000,
+	// 	arrows: false,
+	// 	dots: true,
+	// }
+
 	const testi = {
-		slidesToShow: 1,
+		slidesToShow: 2,
+		cssEase: "linear",
 		slidesToScroll: 1,
-		speed: 1500,
+		speed: 15000,
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 10000,
+		autoplaySpeed: 1000,
 		arrows: false,
-		dots: true,
+		dots: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 580,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	}
 	return (
 		<main>
@@ -97,7 +125,7 @@ export default function ForTalent() {
 					</div>
 				</div>
 			</section>
-			<section className="testimonial_sec for_talent_testimonial">
+			{/* <section className="testimonial_sec for_talent_testimonial">
 				<div className="contain">
 					<Heading text="Hear What Our Clients Have to Say" />
 					<div className="slider_testi">
@@ -144,6 +172,55 @@ export default function ForTalent() {
 							</div>
 						</Slider>
 					</div>
+				</div>
+			</section> */}
+			<section className="testimonial_sec">
+				<div className="contain">
+					<Heading text="Hear What Our Clients Have to Say" />
+				</div>
+				<div className="slider_testi">
+					<Slider {...testi}>
+						<div className="item">
+							<div className="inner">
+								<div className="inner_inner">
+									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+									<h4>Vp of HR, Acme Solutions</h4>
+									<p>Mark Cowel</p>
+								</div>
+							</div>
+						</div>
+						<div className="item">
+							<div className="inner">
+								<div className="inner_inner">
+									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+									<h4>Vp of HR, Acme Solutions</h4>
+									<p>Mark Cowel</p>
+								</div>
+							</div>
+						</div>
+						<div className="item">
+							<div className="inner">
+								<div className="inner_inner">
+									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+									<h4>Vp of HR, Acme Solutions</h4>
+									<p>Mark Cowel</p>
+								</div>
+							</div>
+						</div>
+						<div className="item">
+							<div className="inner">
+								<div className="inner_inner">
+									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+									<h4>Vp of HR, Acme Solutions</h4>
+									<p>Mark Cowel</p>
+								</div>
+							</div>
+						</div>
+					</Slider>
 				</div>
 			</section>
 			<section className="for_talent_article">
