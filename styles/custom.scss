@@ -3291,6 +3291,17 @@ footer {
 	@include mobile {
 		padding-top: 4rem;
 	}
+	a{
+		&:hover{
+			background-image: linear-gradient(90deg, #f80da8, #0b15f9);
+			background-size: 100%;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			@include trans;
+		}
+	}
 	.contain {
 		max-width: 120rem;
 	}

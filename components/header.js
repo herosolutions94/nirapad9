@@ -125,8 +125,13 @@ export default function Header({ data }) {
 										<li>
 											<ul>
 												<li>
-													<Link href="/open-jobs" onClick={closeDropdown}>
+													<Link href="/for-talent" onClick={closeDropdown}>
 													Open Jobs
+													</Link>
+												</li>
+												<li>
+													<Link href="/" onClick={closeDropdown}>
+													Partners
 													</Link>
 												</li>
 												<li>
