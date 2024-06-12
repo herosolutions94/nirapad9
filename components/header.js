@@ -130,7 +130,7 @@ export default function Header({ data }) {
 													</Link>
 												</li>
 												<li>
-													<Link href="/" onClick={closeDropdown}>
+													<Link href="/upload-cv" onClick={closeDropdown}>
 														Become a Talent
 													</Link>
 												</li>
