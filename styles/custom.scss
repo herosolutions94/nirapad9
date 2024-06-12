@@ -3089,6 +3089,16 @@ nav {
 						color: $light;
 						font-size: 1.6rem;
 						margin: 0;
+						@include trans;
+						&:hover{
+							background-image: linear-gradient(90deg, #f80da8, #0b15f9);
+							background-size: 100%;
+							-webkit-background-clip: text;
+							-moz-background-clip: text;
+							-webkit-text-fill-color: transparent;
+							-moz-text-fill-color: transparent;
+							@include trans;
+						}
 						@include ipad_sm {
 							color: $black;
 						}
@@ -3101,13 +3111,20 @@ nav {
 						padding: 1rem 0;
 						text-decoration: none;
 						font-size: 1.4rem;
+						@include trans;
 						@include ipad_sm {
 							@include i_flex;
 							color: $black;
 							padding: 0.5rem 0;
 						}
-						&:hover {
-							color: $color;
+						&:hover{
+							background-image: linear-gradient(90deg, #f80da8, #0b15f9);
+							background-size: 100%;
+							-webkit-background-clip: text;
+							-moz-background-clip: text;
+							-webkit-text-fill-color: transparent;
+							-moz-text-fill-color: transparent;
+							@include trans;
 						}
 					}
 					&:first-child,
