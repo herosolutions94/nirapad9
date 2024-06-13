@@ -391,7 +391,7 @@ h4 {
 				-webkit-mask-composite: xor;
 				mask-composite: exclude;
 			}
-			>.check {
+			> .check {
 				opacity: 1;
 				animation: opacity 2s -1s;
 			}
@@ -2991,7 +2991,8 @@ nav {
 			}
 			> .sub {
 				@include pos($t: 100%, $b: null, $z: 2);
-				background: #535353;
+				background: rgb(83 83 83 / 80%);
+				backdrop-filter: blur(0.7rem);
 				text-align: left;
 				padding: 3rem;
 				margin-top: 1rem;
@@ -3090,7 +3091,7 @@ nav {
 						font-size: 1.6rem;
 						margin: 0;
 						@include trans;
-						&:hover{
+						&:hover {
 							background-image: linear-gradient(90deg, #f80da8, #0b15f9);
 							background-size: 100%;
 							-webkit-background-clip: text;
@@ -3117,7 +3118,7 @@ nav {
 							color: $black;
 							padding: 0.5rem 0;
 						}
-						&:hover{
+						&:hover {
 							background-image: linear-gradient(90deg, #f80da8, #0b15f9);
 							background-size: 100%;
 							-webkit-background-clip: text;
@@ -3291,8 +3292,8 @@ footer {
 	@include mobile {
 		padding-top: 4rem;
 	}
-	a{
-		&:hover{
+	a {
+		&:hover {
 			background-image: linear-gradient(90deg, #f80da8, #0b15f9);
 			background-size: 100%;
 			-webkit-background-clip: text;

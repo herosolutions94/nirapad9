@@ -14,23 +14,37 @@ import TalkToUs from "../components/talk-to-us"
 import Heading from "../components/heading"
 
 export default function MainPage() {
-	// const element = <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />
-	useEffect(() => {
-		// let counter_h1 = document.getElementById("counter_h1").innerHTML = style.color;
-		// console.log(counter_h1);
-		console.log("element", <CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} />)
-		// <h1 id="counter_h1">asdasd<CountUp delay={500} end={350} duration={5} enableScrollSpy={true} scrollSpyDelay={500} suffix="+" /></h1>
-	}, [])
 	const testi = {
+		// slidesToShow: 2,
+		// cssEase: "linear",
+		// slidesToScroll: 0.1,
+		// speed: 1200,
+		// infinite: true,
+		// autoplay: true,
+		// autoplaySpeed: 0,
+		// arrows: false,
+		// pauseOnHover: true,
+		// dots: false,
 		slidesToShow: 2,
 		cssEase: "linear",
-		slidesToScroll: 1,
-		speed: 15000,
+		slidesToScroll: 0.1,
+		speed: 1500,
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 10,
 		arrows: false,
+		pauseOnHover: true,
 		dots: false,
+		/* slidesToShow: 2,
+		cssEase: "linear",
+		slidesToScroll: 0.01,
+		speed: 75,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 10,
+		arrows: false,
+		pauseOnHover: true,
+		dots: false, */
 		responsive: [
 			{
 				breakpoint: 768,
