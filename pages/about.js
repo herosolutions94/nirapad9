@@ -14,7 +14,7 @@ export default function About() {
 		setShowDetail(!showDetail)
 	}
 	const testi = {
-		slidesToShow: 2,
+		/* slidesToShow: 2,
 		cssEase: "linear",
 		slidesToScroll: 1,
 		speed: 15000,
@@ -22,6 +22,16 @@ export default function About() {
 		autoplay: true,
 		autoplaySpeed: 1000,
 		arrows: false,
+		dots: false, */
+		slidesToShow: 2,
+		cssEase: "linear",
+		slidesToScroll: 0.1,
+		speed: 1500,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 10,
+		arrows: false,
+		pauseOnHover: true,
 		dots: false,
 		responsive: [
 			{
@@ -540,48 +550,50 @@ export default function About() {
 					<Heading text="Hear What Our Clients Have to Say" />
 				</div>
 				<div className="slider_testi">
-					<Slider {...testi}>
-						<div className="item">
-							<div className="inner">
-								<div className="inner_inner">
-									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
-									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
-									<h4>Vp of HR, Acme Solutions</h4>
-									<p>Mark Cowel</p>
+					<div className="contain">
+						<Slider {...testi}>
+							<div className="item">
+								<div className="inner">
+									<div className="inner_inner">
+										<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+										<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+										<h4>Vp of HR, Acme Solutions</h4>
+										<p>Mark Cowel</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className="item">
-							<div className="inner">
-								<div className="inner_inner">
-									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
-									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
-									<h4>Vp of HR, Acme Solutions</h4>
-									<p>Mark Cowel</p>
+							<div className="item">
+								<div className="inner">
+									<div className="inner_inner">
+										<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+										<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+										<h4>Vp of HR, Acme Solutions</h4>
+										<p>Mark Cowel</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className="item">
-							<div className="inner">
-								<div className="inner_inner">
-									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
-									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
-									<h4>Vp of HR, Acme Solutions</h4>
-									<p>Mark Cowel</p>
+							<div className="item">
+								<div className="inner">
+									<div className="inner_inner">
+										<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+										<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+										<h4>Vp of HR, Acme Solutions</h4>
+										<p>Mark Cowel</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className="item">
-							<div className="inner">
-								<div className="inner_inner">
-									<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
-									<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
-									<h4>Vp of HR, Acme Solutions</h4>
-									<p>Mark Cowel</p>
+							<div className="item">
+								<div className="inner">
+									<div className="inner_inner">
+										<p>Amazing service! helped us achieve our goals quickly and efficiently. </p>
+										<ReactStars className="rates" count={5} value={5} size={12} color1={"#ddd"} color2={"#F0C91A"} edit={false} />
+										<h4>Vp of HR, Acme Solutions</h4>
+										<p>Mark Cowel</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					</Slider>
+						</Slider>
+					</div>
 				</div>
 			</section>
 			<TalkToUs />
